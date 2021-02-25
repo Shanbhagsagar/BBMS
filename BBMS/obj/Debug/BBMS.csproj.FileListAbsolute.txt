@@ -9,3 +9,6 @@ F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.Properties.Resources.resources
 F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.csproj.GenerateResource.Cache
 F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.exe
 F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.pdb
+C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\bin\Debug\BBMS.exe.config
+C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.exe
+C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.pdb
