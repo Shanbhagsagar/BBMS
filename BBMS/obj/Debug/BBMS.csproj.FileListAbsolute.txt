@@ -1,0 +1,11 @@
+F:\.net_project\BBMS\BBMS\bin\Debug\BBMS.exe.config
+F:\.net_project\BBMS\BBMS\bin\Debug\BBMS.exe
+F:\.net_project\BBMS\BBMS\bin\Debug\BBMS.pdb
+F:\.net_project\BBMS\BBMS\bin\Debug\CircularProgressBar.dll
+F:\.net_project\BBMS\BBMS\bin\Debug\WinFormAnimation.dll
+F:\.net_project\BBMS\BBMS\bin\Debug\CircularProgressBar.xml
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.Form1.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.Properties.Resources.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.csproj.GenerateResource.Cache
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.exe
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.pdb
