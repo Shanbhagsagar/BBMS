@@ -63,6 +63,12 @@
     <Compile Include="Blink.Designer.cs">
       <DependentUpon>Blink.cs</DependentUpon>
     </Compile>
+    <Compile Include="emp_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp_dashboard.Designer.cs">
+      <DependentUpon>emp_dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Blink.resx">
       <DependentUpon>Blink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_dashboard.resx">
+      <DependentUpon>emp_dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
