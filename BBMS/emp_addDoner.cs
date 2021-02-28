@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace BBMS
 {
-    public partial class emp_dashboard : Form
+    public partial class emp_addDoner : Form
     {
-        public emp_dashboard()
+        public emp_addDoner()
         {
             InitializeComponent();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
