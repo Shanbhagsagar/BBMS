@@ -291,6 +291,7 @@
             this.jMetroTextBox1.TabIndex = 20;
             this.jMetroTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.jMetroTextBox1.TextName = "";
+            this.jMetroTextBox1.Validating += new System.ComponentModel.CancelEventHandler(this.jMetroTextBox1_Validating);
             // 
             // jMetroTextBox2
             // 
@@ -304,7 +305,7 @@
             this.jMetroTextBox2.ForeColors = System.Drawing.Color.Gray;
             this.jMetroTextBox2.IsPassword = false;
             this.jMetroTextBox2.LineThickness = 2;
-            this.jMetroTextBox2.Location = new System.Drawing.Point(925, 212);
+            this.jMetroTextBox2.Location = new System.Drawing.Point(626, 212);
             this.jMetroTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.jMetroTextBox2.MaxLength = 32767;
             this.jMetroTextBox2.MouseOnHover = System.Drawing.Color.Empty;
@@ -317,6 +318,7 @@
             this.jMetroTextBox2.TabIndex = 21;
             this.jMetroTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.jMetroTextBox2.TextName = "";
+            this.jMetroTextBox2.Validating += new System.ComponentModel.CancelEventHandler(this.jMetroTextBox2_Validating);
             // 
             // jMetroTextBox3
             // 
@@ -330,7 +332,7 @@
             this.jMetroTextBox3.ForeColors = System.Drawing.Color.Gray;
             this.jMetroTextBox3.IsPassword = false;
             this.jMetroTextBox3.LineThickness = 2;
-            this.jMetroTextBox3.Location = new System.Drawing.Point(626, 212);
+            this.jMetroTextBox3.Location = new System.Drawing.Point(925, 212);
             this.jMetroTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.jMetroTextBox3.MaxLength = 32767;
             this.jMetroTextBox3.MouseOnHover = System.Drawing.Color.Empty;
@@ -343,6 +345,7 @@
             this.jMetroTextBox3.TabIndex = 22;
             this.jMetroTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.jMetroTextBox3.TextName = "";
+            this.jMetroTextBox3.Validating += new System.ComponentModel.CancelEventHandler(this.jMetroTextBox3_Validating);
             // 
             // jMetroTextBox4
             // 
@@ -369,6 +372,7 @@
             this.jMetroTextBox4.TabIndex = 23;
             this.jMetroTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.jMetroTextBox4.TextName = "";
+            this.jMetroTextBox4.Validating += new System.ComponentModel.CancelEventHandler(this.jMetroTextBox4_Validating);
             // 
             // label14
             // 
@@ -411,8 +415,8 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button1.Location = new System.Drawing.Point(655, 622);
             this.button1.Name = "button1";
@@ -420,6 +424,7 @@
             this.button1.TabIndex = 27;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // emp_addDoner
             // 
