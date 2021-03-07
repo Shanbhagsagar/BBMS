@@ -73,6 +73,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin_analysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_analysis.Designer.cs">
+      <DependentUpon>admin_analysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_dashboard.Designer.cs">
+      <DependentUpon>admin_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_editemployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_editemployees.Designer.cs">
+      <DependentUpon>admin_editemployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_employees.Designer.cs">
+      <DependentUpon>admin_employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_Login.Designer.cs">
+      <DependentUpon>admin_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_viewemployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_viewemployees.Designer.cs">
+      <DependentUpon>admin_viewemployees.cs</DependentUpon>
+    </Compile>
     <Compile Include="Blink.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +135,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin_analysis.resx">
+      <DependentUpon>admin_analysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_dashboard.resx">
+      <DependentUpon>admin_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_editemployees.resx">
+      <DependentUpon>admin_editemployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_employees.resx">
+      <DependentUpon>admin_employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_Login.resx">
+      <DependentUpon>admin_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_viewemployees.resx">
+      <DependentUpon>admin_viewemployees.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Blink.resx">
       <DependentUpon>Blink.cs</DependentUpon>
     </EmbeddedResource>
