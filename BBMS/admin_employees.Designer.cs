@@ -42,26 +42,26 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.jMetroTextBox4 = new JMetroTextBox.JMetroTextBox();
-            this.jMetroTextBox3 = new JMetroTextBox.JMetroTextBox();
-            this.jMetroTextBox2 = new JMetroTextBox.JMetroTextBox();
-            this.jMetroTextBox1 = new JMetroTextBox.JMetroTextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.jMetroTextBox5 = new JMetroTextBox.JMetroTextBox();
-            this.jMetroTextBox6 = new JMetroTextBox.JMetroTextBox();
-            this.jMetroTextBox7 = new JMetroTextBox.JMetroTextBox();
-            this.jMetroTextBox8 = new JMetroTextBox.JMetroTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.guna2TextBox0 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -218,19 +218,6 @@
             this.panel2.Size = new System.Drawing.Size(1247, 58);
             this.panel2.TabIndex = 15;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(626, 677);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 44);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -243,20 +230,6 @@
             this.label15.TabIndex = 39;
             this.label15.Text = "Gender";
             // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.Color.White;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBox2.Location = new System.Drawing.Point(946, 403);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(229, 26);
-            this.comboBox2.TabIndex = 38;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -268,110 +241,6 @@
             this.label14.Size = new System.Drawing.Size(131, 23);
             this.label14.TabIndex = 37;
             this.label14.Text = "Adhaar Card ";
-            // 
-            // jMetroTextBox4
-            // 
-            this.jMetroTextBox4.BackColor = System.Drawing.Color.Transparent;
-            this.jMetroTextBox4.BorderColor = System.Drawing.Color.Firebrick;
-            this.jMetroTextBox4.BorderRadius = 1;
-            this.jMetroTextBox4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.jMetroTextBox4.FillColor = System.Drawing.SystemColors.Window;
-            this.jMetroTextBox4.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.jMetroTextBox4.Font_Size = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.jMetroTextBox4.ForeColors = System.Drawing.Color.Gray;
-            this.jMetroTextBox4.IsPassword = false;
-            this.jMetroTextBox4.LineThickness = 2;
-            this.jMetroTextBox4.Location = new System.Drawing.Point(348, 390);
-            this.jMetroTextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.jMetroTextBox4.MaxLength = 32767;
-            this.jMetroTextBox4.MouseOnHover = System.Drawing.Color.Empty;
-            this.jMetroTextBox4.Name = "jMetroTextBox4";
-            this.jMetroTextBox4.OnCursor = System.Windows.Forms.Cursors.IBeam;
-            this.jMetroTextBox4.OnFocusColor = System.Drawing.Color.Maroon;
-            this.jMetroTextBox4.OnFocusFontColor = System.Drawing.Color.Empty;
-            this.jMetroTextBox4.ReadOnly = false;
-            this.jMetroTextBox4.Size = new System.Drawing.Size(229, 39);
-            this.jMetroTextBox4.TabIndex = 36;
-            this.jMetroTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.jMetroTextBox4.TextName = "";
-            // 
-            // jMetroTextBox3
-            // 
-            this.jMetroTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.jMetroTextBox3.BorderColor = System.Drawing.Color.Firebrick;
-            this.jMetroTextBox3.BorderRadius = 1;
-            this.jMetroTextBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.jMetroTextBox3.FillColor = System.Drawing.SystemColors.Window;
-            this.jMetroTextBox3.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.jMetroTextBox3.Font_Size = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.jMetroTextBox3.ForeColors = System.Drawing.Color.Gray;
-            this.jMetroTextBox3.IsPassword = false;
-            this.jMetroTextBox3.LineThickness = 2;
-            this.jMetroTextBox3.Location = new System.Drawing.Point(647, 238);
-            this.jMetroTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.jMetroTextBox3.MaxLength = 32767;
-            this.jMetroTextBox3.MouseOnHover = System.Drawing.Color.Empty;
-            this.jMetroTextBox3.Name = "jMetroTextBox3";
-            this.jMetroTextBox3.OnCursor = System.Windows.Forms.Cursors.IBeam;
-            this.jMetroTextBox3.OnFocusColor = System.Drawing.Color.Maroon;
-            this.jMetroTextBox3.OnFocusFontColor = System.Drawing.Color.Empty;
-            this.jMetroTextBox3.ReadOnly = false;
-            this.jMetroTextBox3.Size = new System.Drawing.Size(229, 39);
-            this.jMetroTextBox3.TabIndex = 35;
-            this.jMetroTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.jMetroTextBox3.TextName = "";
-            // 
-            // jMetroTextBox2
-            // 
-            this.jMetroTextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.jMetroTextBox2.BorderColor = System.Drawing.Color.Firebrick;
-            this.jMetroTextBox2.BorderRadius = 1;
-            this.jMetroTextBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.jMetroTextBox2.FillColor = System.Drawing.SystemColors.Window;
-            this.jMetroTextBox2.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.jMetroTextBox2.Font_Size = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.jMetroTextBox2.ForeColors = System.Drawing.Color.Gray;
-            this.jMetroTextBox2.IsPassword = false;
-            this.jMetroTextBox2.LineThickness = 2;
-            this.jMetroTextBox2.Location = new System.Drawing.Point(946, 238);
-            this.jMetroTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.jMetroTextBox2.MaxLength = 32767;
-            this.jMetroTextBox2.MouseOnHover = System.Drawing.Color.Empty;
-            this.jMetroTextBox2.Name = "jMetroTextBox2";
-            this.jMetroTextBox2.OnCursor = System.Windows.Forms.Cursors.IBeam;
-            this.jMetroTextBox2.OnFocusColor = System.Drawing.Color.Maroon;
-            this.jMetroTextBox2.OnFocusFontColor = System.Drawing.Color.Empty;
-            this.jMetroTextBox2.ReadOnly = false;
-            this.jMetroTextBox2.Size = new System.Drawing.Size(229, 39);
-            this.jMetroTextBox2.TabIndex = 34;
-            this.jMetroTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.jMetroTextBox2.TextName = "";
-            // 
-            // jMetroTextBox1
-            // 
-            this.jMetroTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.jMetroTextBox1.BorderColor = System.Drawing.Color.Firebrick;
-            this.jMetroTextBox1.BorderRadius = 1;
-            this.jMetroTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.jMetroTextBox1.FillColor = System.Drawing.SystemColors.Window;
-            this.jMetroTextBox1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jMetroTextBox1.Font_Size = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jMetroTextBox1.ForeColors = System.Drawing.Color.Gray;
-            this.jMetroTextBox1.IsPassword = false;
-            this.jMetroTextBox1.LineThickness = 2;
-            this.jMetroTextBox1.Location = new System.Drawing.Point(348, 238);
-            this.jMetroTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.jMetroTextBox1.MaxLength = 32767;
-            this.jMetroTextBox1.MouseOnHover = System.Drawing.Color.Empty;
-            this.jMetroTextBox1.Name = "jMetroTextBox1";
-            this.jMetroTextBox1.OnCursor = System.Windows.Forms.Cursors.IBeam;
-            this.jMetroTextBox1.OnFocusColor = System.Drawing.Color.Maroon;
-            this.jMetroTextBox1.OnFocusFontColor = System.Drawing.Color.Empty;
-            this.jMetroTextBox1.ReadOnly = false;
-            this.jMetroTextBox1.Size = new System.Drawing.Size(229, 39);
-            this.jMetroTextBox1.TabIndex = 33;
-            this.jMetroTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.jMetroTextBox1.TextName = "";
             // 
             // label13
             // 
@@ -427,115 +296,11 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Audiowide", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Maroon;
-            this.label5.Location = new System.Drawing.Point(570, 97);
+            this.label5.Location = new System.Drawing.Point(594, 89);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(318, 45);
             this.label5.TabIndex = 41;
             this.label5.Text = "Add Employees";
-            // 
-            // jMetroTextBox5
-            // 
-            this.jMetroTextBox5.BackColor = System.Drawing.Color.Transparent;
-            this.jMetroTextBox5.BorderColor = System.Drawing.Color.Firebrick;
-            this.jMetroTextBox5.BorderRadius = 1;
-            this.jMetroTextBox5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.jMetroTextBox5.FillColor = System.Drawing.SystemColors.Window;
-            this.jMetroTextBox5.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.jMetroTextBox5.Font_Size = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.jMetroTextBox5.ForeColors = System.Drawing.Color.Gray;
-            this.jMetroTextBox5.IsPassword = false;
-            this.jMetroTextBox5.LineThickness = 2;
-            this.jMetroTextBox5.Location = new System.Drawing.Point(647, 390);
-            this.jMetroTextBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.jMetroTextBox5.MaxLength = 32767;
-            this.jMetroTextBox5.MouseOnHover = System.Drawing.Color.Empty;
-            this.jMetroTextBox5.Name = "jMetroTextBox5";
-            this.jMetroTextBox5.OnCursor = System.Windows.Forms.Cursors.IBeam;
-            this.jMetroTextBox5.OnFocusColor = System.Drawing.Color.Maroon;
-            this.jMetroTextBox5.OnFocusFontColor = System.Drawing.Color.Empty;
-            this.jMetroTextBox5.ReadOnly = false;
-            this.jMetroTextBox5.Size = new System.Drawing.Size(229, 39);
-            this.jMetroTextBox5.TabIndex = 42;
-            this.jMetroTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.jMetroTextBox5.TextName = "";
-            // 
-            // jMetroTextBox6
-            // 
-            this.jMetroTextBox6.BackColor = System.Drawing.Color.Transparent;
-            this.jMetroTextBox6.BorderColor = System.Drawing.Color.Firebrick;
-            this.jMetroTextBox6.BorderRadius = 1;
-            this.jMetroTextBox6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.jMetroTextBox6.FillColor = System.Drawing.SystemColors.Window;
-            this.jMetroTextBox6.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.jMetroTextBox6.Font_Size = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.jMetroTextBox6.ForeColors = System.Drawing.Color.Gray;
-            this.jMetroTextBox6.IsPassword = false;
-            this.jMetroTextBox6.LineThickness = 2;
-            this.jMetroTextBox6.Location = new System.Drawing.Point(647, 553);
-            this.jMetroTextBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.jMetroTextBox6.MaxLength = 32767;
-            this.jMetroTextBox6.MouseOnHover = System.Drawing.Color.Empty;
-            this.jMetroTextBox6.Name = "jMetroTextBox6";
-            this.jMetroTextBox6.OnCursor = System.Windows.Forms.Cursors.IBeam;
-            this.jMetroTextBox6.OnFocusColor = System.Drawing.Color.Maroon;
-            this.jMetroTextBox6.OnFocusFontColor = System.Drawing.Color.Empty;
-            this.jMetroTextBox6.ReadOnly = false;
-            this.jMetroTextBox6.Size = new System.Drawing.Size(229, 39);
-            this.jMetroTextBox6.TabIndex = 48;
-            this.jMetroTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.jMetroTextBox6.TextName = "";
-            // 
-            // jMetroTextBox7
-            // 
-            this.jMetroTextBox7.BackColor = System.Drawing.Color.Transparent;
-            this.jMetroTextBox7.BorderColor = System.Drawing.Color.Firebrick;
-            this.jMetroTextBox7.BorderRadius = 1;
-            this.jMetroTextBox7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.jMetroTextBox7.FillColor = System.Drawing.SystemColors.Window;
-            this.jMetroTextBox7.Font = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.jMetroTextBox7.Font_Size = new System.Drawing.Font("Berlin Sans FB", 12F);
-            this.jMetroTextBox7.ForeColors = System.Drawing.Color.Gray;
-            this.jMetroTextBox7.IsPassword = false;
-            this.jMetroTextBox7.LineThickness = 2;
-            this.jMetroTextBox7.Location = new System.Drawing.Point(946, 553);
-            this.jMetroTextBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.jMetroTextBox7.MaxLength = 32767;
-            this.jMetroTextBox7.MouseOnHover = System.Drawing.Color.Empty;
-            this.jMetroTextBox7.Name = "jMetroTextBox7";
-            this.jMetroTextBox7.OnCursor = System.Windows.Forms.Cursors.IBeam;
-            this.jMetroTextBox7.OnFocusColor = System.Drawing.Color.Maroon;
-            this.jMetroTextBox7.OnFocusFontColor = System.Drawing.Color.Empty;
-            this.jMetroTextBox7.ReadOnly = false;
-            this.jMetroTextBox7.Size = new System.Drawing.Size(229, 39);
-            this.jMetroTextBox7.TabIndex = 47;
-            this.jMetroTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.jMetroTextBox7.TextName = "";
-            // 
-            // jMetroTextBox8
-            // 
-            this.jMetroTextBox8.BackColor = System.Drawing.Color.Transparent;
-            this.jMetroTextBox8.BorderColor = System.Drawing.Color.Firebrick;
-            this.jMetroTextBox8.BorderRadius = 1;
-            this.jMetroTextBox8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.jMetroTextBox8.FillColor = System.Drawing.SystemColors.Window;
-            this.jMetroTextBox8.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jMetroTextBox8.Font_Size = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jMetroTextBox8.ForeColors = System.Drawing.Color.Gray;
-            this.jMetroTextBox8.IsPassword = false;
-            this.jMetroTextBox8.LineThickness = 2;
-            this.jMetroTextBox8.Location = new System.Drawing.Point(348, 553);
-            this.jMetroTextBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.jMetroTextBox8.MaxLength = 32767;
-            this.jMetroTextBox8.MouseOnHover = System.Drawing.Color.Empty;
-            this.jMetroTextBox8.Name = "jMetroTextBox8";
-            this.jMetroTextBox8.OnCursor = System.Windows.Forms.Cursors.IBeam;
-            this.jMetroTextBox8.OnFocusColor = System.Drawing.Color.Maroon;
-            this.jMetroTextBox8.OnFocusFontColor = System.Drawing.Color.Empty;
-            this.jMetroTextBox8.ReadOnly = false;
-            this.jMetroTextBox8.Size = new System.Drawing.Size(229, 39);
-            this.jMetroTextBox8.TabIndex = 46;
-            this.jMetroTextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.jMetroTextBox8.TextName = "";
             // 
             // label6
             // 
@@ -573,27 +338,285 @@
             this.label9.TabIndex = 43;
             this.label9.Text = "Email Id";
             // 
+            // guna2TextBox0
+            // 
+            this.guna2TextBox0.AutoRoundedCorners = true;
+            this.guna2TextBox0.BorderColor = System.Drawing.Color.Maroon;
+            this.guna2TextBox0.BorderRadius = 17;
+            this.guna2TextBox0.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox0.DefaultText = "";
+            this.guna2TextBox0.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox0.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox0.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox0.DisabledState.Parent = this.guna2TextBox0;
+            this.guna2TextBox0.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox0.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox0.FocusedState.Parent = this.guna2TextBox0;
+            this.guna2TextBox0.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox0.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox0.HoverState.Parent = this.guna2TextBox0;
+            this.guna2TextBox0.Location = new System.Drawing.Point(348, 243);
+            this.guna2TextBox0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox0.Name = "guna2TextBox0";
+            this.guna2TextBox0.PasswordChar = '\0';
+            this.guna2TextBox0.PlaceholderText = "";
+            this.guna2TextBox0.SelectedText = "";
+            this.guna2TextBox0.ShadowDecoration.Parent = this.guna2TextBox0;
+            this.guna2TextBox0.Size = new System.Drawing.Size(229, 36);
+            this.guna2TextBox0.TabIndex = 46;
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.AutoRoundedCorners = true;
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.Maroon;
+            this.guna2TextBox1.BorderRadius = 17;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Location = new System.Drawing.Point(647, 243);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(229, 36);
+            this.guna2TextBox1.TabIndex = 47;
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.AutoRoundedCorners = true;
+            this.guna2TextBox2.BorderColor = System.Drawing.Color.Maroon;
+            this.guna2TextBox2.BorderRadius = 17;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.Location = new System.Drawing.Point(946, 243);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.Size = new System.Drawing.Size(229, 36);
+            this.guna2TextBox2.TabIndex = 48;
+            // 
+            // guna2TextBox3
+            // 
+            this.guna2TextBox3.AutoRoundedCorners = true;
+            this.guna2TextBox3.BorderColor = System.Drawing.Color.Maroon;
+            this.guna2TextBox3.BorderRadius = 17;
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox3.DefaultText = "";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.Location = new System.Drawing.Point(348, 393);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PasswordChar = '\0';
+            this.guna2TextBox3.PlaceholderText = "";
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.Size = new System.Drawing.Size(229, 36);
+            this.guna2TextBox3.TabIndex = 49;
+            // 
+            // guna2TextBox4
+            // 
+            this.guna2TextBox4.AutoRoundedCorners = true;
+            this.guna2TextBox4.BorderColor = System.Drawing.Color.Maroon;
+            this.guna2TextBox4.BorderRadius = 17;
+            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox4.DefaultText = "";
+            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.Location = new System.Drawing.Point(647, 393);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox4.Name = "guna2TextBox4";
+            this.guna2TextBox4.PasswordChar = '\0';
+            this.guna2TextBox4.PlaceholderText = "";
+            this.guna2TextBox4.SelectedText = "";
+            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.Size = new System.Drawing.Size(229, 36);
+            this.guna2TextBox4.TabIndex = 50;
+            // 
+            // guna2TextBox5
+            // 
+            this.guna2TextBox5.AutoRoundedCorners = true;
+            this.guna2TextBox5.BorderColor = System.Drawing.Color.Maroon;
+            this.guna2TextBox5.BorderRadius = 17;
+            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox5.DefaultText = "";
+            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
+            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
+            this.guna2TextBox5.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
+            this.guna2TextBox5.Location = new System.Drawing.Point(348, 557);
+            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox5.Name = "guna2TextBox5";
+            this.guna2TextBox5.PasswordChar = '\0';
+            this.guna2TextBox5.PlaceholderText = "";
+            this.guna2TextBox5.SelectedText = "";
+            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
+            this.guna2TextBox5.Size = new System.Drawing.Size(229, 36);
+            this.guna2TextBox5.TabIndex = 51;
+            // 
+            // guna2TextBox6
+            // 
+            this.guna2TextBox6.AutoRoundedCorners = true;
+            this.guna2TextBox6.BorderColor = System.Drawing.Color.Maroon;
+            this.guna2TextBox6.BorderRadius = 17;
+            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox6.DefaultText = "";
+            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox6.DisabledState.Parent = this.guna2TextBox6;
+            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox6.FocusedState.Parent = this.guna2TextBox6;
+            this.guna2TextBox6.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
+            this.guna2TextBox6.Location = new System.Drawing.Point(647, 557);
+            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox6.Name = "guna2TextBox6";
+            this.guna2TextBox6.PasswordChar = '\0';
+            this.guna2TextBox6.PlaceholderText = "";
+            this.guna2TextBox6.SelectedText = "";
+            this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
+            this.guna2TextBox6.Size = new System.Drawing.Size(229, 36);
+            this.guna2TextBox6.TabIndex = 52;
+            // 
+            // guna2TextBox7
+            // 
+            this.guna2TextBox7.AutoRoundedCorners = true;
+            this.guna2TextBox7.BorderColor = System.Drawing.Color.Maroon;
+            this.guna2TextBox7.BorderRadius = 17;
+            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox7.DefaultText = "";
+            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox7.DisabledState.Parent = this.guna2TextBox7;
+            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox7.FocusedState.Parent = this.guna2TextBox7;
+            this.guna2TextBox7.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
+            this.guna2TextBox7.Location = new System.Drawing.Point(946, 557);
+            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox7.Name = "guna2TextBox7";
+            this.guna2TextBox7.PasswordChar = '\0';
+            this.guna2TextBox7.PlaceholderText = "";
+            this.guna2TextBox7.SelectedText = "";
+            this.guna2TextBox7.ShadowDecoration.Parent = this.guna2TextBox7;
+            this.guna2TextBox7.Size = new System.Drawing.Size(229, 36);
+            this.guna2TextBox7.TabIndex = 53;
+            // 
+            // guna2ComboBox2
+            // 
+            this.guna2ComboBox2.AutoRoundedCorners = true;
+            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox2.BorderColor = System.Drawing.Color.Maroon;
+            this.guna2ComboBox2.BorderRadius = 17;
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBox2.ForeColor = System.Drawing.Color.Maroon;
+            this.guna2ComboBox2.FormattingEnabled = true;
+            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.ItemHeight = 30;
+            this.guna2ComboBox2.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Location = new System.Drawing.Point(946, 393);
+            this.guna2ComboBox2.Name = "guna2ComboBox2";
+            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Size = new System.Drawing.Size(229, 36);
+            this.guna2ComboBox2.TabIndex = 54;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BorderRadius = 21;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.DarkRed;
+            this.guna2Button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(683, 676);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.TabIndex = 83;
+            this.guna2Button1.Text = "Submit";
+            // 
             // admin_employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1247, 758);
-            this.Controls.Add(this.jMetroTextBox6);
-            this.Controls.Add(this.jMetroTextBox7);
-            this.Controls.Add(this.jMetroTextBox8);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.guna2ComboBox2);
+            this.Controls.Add(this.guna2TextBox7);
+            this.Controls.Add(this.guna2TextBox6);
+            this.Controls.Add(this.guna2TextBox5);
+            this.Controls.Add(this.guna2TextBox4);
+            this.Controls.Add(this.guna2TextBox3);
+            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.guna2TextBox0);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.jMetroTextBox5);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.jMetroTextBox4);
-            this.Controls.Add(this.jMetroTextBox3);
-            this.Controls.Add(this.jMetroTextBox2);
-            this.Controls.Add(this.jMetroTextBox1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -626,23 +649,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label14;
-        private JMetroTextBox.JMetroTextBox jMetroTextBox4;
-        private JMetroTextBox.JMetroTextBox jMetroTextBox3;
-        private JMetroTextBox.JMetroTextBox jMetroTextBox2;
-        private JMetroTextBox.JMetroTextBox jMetroTextBox1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label5;
-        private JMetroTextBox.JMetroTextBox jMetroTextBox5;
-        private JMetroTextBox.JMetroTextBox jMetroTextBox6;
-        private JMetroTextBox.JMetroTextBox jMetroTextBox7;
-        private JMetroTextBox.JMetroTextBox jMetroTextBox8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
@@ -650,5 +663,15 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label17;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox0;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

@@ -37,6 +37,12 @@
       <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Downloads\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Downloads\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="JDragControl">
       <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\JDragControl.dll</HintPath>
     </Reference>
@@ -55,9 +61,11 @@
     <Reference Include="JThinButton">
       <HintPath>C:\Users\shanb\Downloads\JControls\JThinButton.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -127,6 +135,12 @@
     <Compile Include="emp_dashboard.Designer.cs">
       <DependentUpon>emp_dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="emp_viewDonor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp_viewDonor.Designer.cs">
+      <DependentUpon>emp_viewDonor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="emp_dashboard.resx">
       <DependentUpon>emp_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_viewDonor.resx">
+      <DependentUpon>emp_viewDonor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
