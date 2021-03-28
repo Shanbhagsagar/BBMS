@@ -129,6 +129,18 @@
     <Compile Include="emp_addDoner.Designer.cs">
       <DependentUpon>emp_addDoner.cs</DependentUpon>
     </Compile>
+    <Compile Include="emp_addPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp_addPatient.Designer.cs">
+      <DependentUpon>emp_addPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emp_bloodStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp_bloodStock.Designer.cs">
+      <DependentUpon>emp_bloodStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="emp_dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +152,12 @@
     </Compile>
     <Compile Include="emp_viewDonor.Designer.cs">
       <DependentUpon>emp_viewDonor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emp_viewPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp_viewPatient.Designer.cs">
+      <DependentUpon>emp_viewPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -173,11 +191,20 @@
     <EmbeddedResource Include="emp_addDoner.resx">
       <DependentUpon>emp_addDoner.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="emp_addPatient.resx">
+      <DependentUpon>emp_addPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_bloodStock.resx">
+      <DependentUpon>emp_bloodStock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="emp_dashboard.resx">
       <DependentUpon>emp_dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="emp_viewDonor.resx">
       <DependentUpon>emp_viewDonor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_viewPatient.resx">
+      <DependentUpon>emp_viewPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
