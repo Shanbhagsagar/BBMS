@@ -132,16 +132,6 @@
     <Compile Include="admin_viewemployees.Designer.cs">
       <DependentUpon>admin_viewemployees.cs</DependentUpon>
     </Compile>
-    <Compile Include="bbmsDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bbmsDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="bbmsDBDataSetDonor.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bbmsDBDataSetDonor.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Blink.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,28 +233,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="bbmsDataSet.xsc">
-      <DependentUpon>bbmsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="bbmsDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bbmsDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="bbmsDataSet.xss">
-      <DependentUpon>bbmsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="bbmsDBDataSetDonor.xsc">
-      <DependentUpon>bbmsDBDataSetDonor.xsd</DependentUpon>
-    </None>
-    <None Include="bbmsDBDataSetDonor.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bbmsDBDataSetDonor.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="bbmsDBDataSetDonor.xss">
-      <DependentUpon>bbmsDBDataSetDonor.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -278,18 +246,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="bbms.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bbmsDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="bbmsDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>bbmsDB.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
