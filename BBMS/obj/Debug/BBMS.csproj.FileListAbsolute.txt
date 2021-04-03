@@ -51,3 +51,20 @@ C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.emp_viewDonor.resource
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.emp_viewPatient.resources
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\bin\Debug\bbmsDB.mdf
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\bin\Debug\bbmsDB_log.ldf
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.admin_analysis.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.admin_dashboard.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.admin_editemployees.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.admin_employees.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.admin_Login.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.admin_viewemployees.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.emp_addDoner.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.emp_addPatient.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.emp_bloodStock.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.emp_dashboard.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.emp_viewDonor.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.emp_viewPatient.resources
+F:\.net_project\BBMS\BBMS\bin\Debug\JDragControl.dll
+F:\.net_project\BBMS\BBMS\bin\Debug\JMaterialTextbox.dll
+F:\.net_project\BBMS\BBMS\bin\Debug\JMetroTextBox.dll
+F:\.net_project\BBMS\BBMS\bin\Debug\JTextBox.dll
+F:\.net_project\BBMS\BBMS\bin\Debug\JTextBox2.dll

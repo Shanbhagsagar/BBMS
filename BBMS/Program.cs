@@ -16,7 +16,7 @@ namespace BBMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new emp_viewDonor());
+            Application.Run(new admin_Login());
         }
     }
 }

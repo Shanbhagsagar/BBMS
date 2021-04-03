@@ -53,9 +53,7 @@
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
-            this.bbmsDBDataSetDonor = new BBMS.bbmsDBDataSetDonor();
             this.donorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.donorTableAdapter = new BBMS.bbmsDBDataSetDonorTableAdapters.donorTableAdapter();
             this.donorIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.donorNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.donorAgeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,7 +64,6 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bbmsDBDataSetDonor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.donorBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -383,19 +380,7 @@
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // bbmsDBDataSetDonor
-            // 
-            this.bbmsDBDataSetDonor.DataSetName = "bbmsDBDataSetDonor";
-            this.bbmsDBDataSetDonor.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // donorBindingSource
-            // 
-            this.donorBindingSource.DataMember = "donor";
-            this.donorBindingSource.DataSource = this.bbmsDBDataSetDonor;
-            // 
-            // donorTableAdapter
-            // 
-            this.donorTableAdapter.ClearBeforeFill = true;
+           
             // 
             // donorIDDataGridViewTextBoxColumn
             // 
@@ -467,7 +452,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bbmsDBDataSetDonor)).EndInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.donorBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -497,9 +482,7 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Label label10;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
-        private bbmsDBDataSetDonor bbmsDBDataSetDonor;
         private System.Windows.Forms.BindingSource donorBindingSource;
-        private bbmsDBDataSetDonorTableAdapters.donorTableAdapter donorTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn donorIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn donorNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn donorAgeDataGridViewTextBoxColumn;
