@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -52,9 +53,21 @@
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
+            this.bbmsDBDataSetDonor = new BBMS.bbmsDBDataSetDonor();
+            this.donorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.donorTableAdapter = new BBMS.bbmsDBDataSetDonorTableAdapters.donorTableAdapter();
+            this.donorIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donorNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donorAgeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donorPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donorAddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donorBTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donorGenderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bbmsDBDataSetDonor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.donorBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -301,10 +314,14 @@
             // 
             // gunaDataGridView1
             // 
+            this.gunaDataGridView1.AllowUserToAddRows = false;
+            this.gunaDataGridView1.AllowUserToDeleteRows = false;
+            this.gunaDataGridView1.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gunaDataGridView1.AutoGenerateColumns = false;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -316,7 +333,16 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gunaDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gunaDataGridView1.ColumnHeadersHeight = 21;
+            this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.donorIDDataGridViewTextBoxColumn,
+            this.donorNameDataGridViewTextBoxColumn,
+            this.donorAgeDataGridViewTextBoxColumn,
+            this.donorPhoneDataGridViewTextBoxColumn,
+            this.donorAddressDataGridViewTextBoxColumn,
+            this.donorBTDataGridViewTextBoxColumn,
+            this.donorGenderDataGridViewTextBoxColumn});
+            this.gunaDataGridView1.DataSource = this.donorBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -329,6 +355,7 @@
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.Location = new System.Drawing.Point(279, 222);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
+            this.gunaDataGridView1.ReadOnly = true;
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gunaDataGridView1.Size = new System.Drawing.Size(919, 424);
@@ -339,15 +366,15 @@
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
             this.gunaDataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gunaDataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.gunaDataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gunaDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gunaDataGridView1.ThemeStyle.HeaderStyle.Height = 21;
-            this.gunaDataGridView1.ThemeStyle.ReadOnly = false;
+            this.gunaDataGridView1.ThemeStyle.ReadOnly = true;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -355,6 +382,69 @@
             this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 22;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // bbmsDBDataSetDonor
+            // 
+            this.bbmsDBDataSetDonor.DataSetName = "bbmsDBDataSetDonor";
+            this.bbmsDBDataSetDonor.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // donorBindingSource
+            // 
+            this.donorBindingSource.DataMember = "donor";
+            this.donorBindingSource.DataSource = this.bbmsDBDataSetDonor;
+            // 
+            // donorTableAdapter
+            // 
+            this.donorTableAdapter.ClearBeforeFill = true;
+            // 
+            // donorIDDataGridViewTextBoxColumn
+            // 
+            this.donorIDDataGridViewTextBoxColumn.DataPropertyName = "donorID";
+            this.donorIDDataGridViewTextBoxColumn.HeaderText = "donorID";
+            this.donorIDDataGridViewTextBoxColumn.Name = "donorIDDataGridViewTextBoxColumn";
+            this.donorIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // donorNameDataGridViewTextBoxColumn
+            // 
+            this.donorNameDataGridViewTextBoxColumn.DataPropertyName = "donorName";
+            this.donorNameDataGridViewTextBoxColumn.HeaderText = "donorName";
+            this.donorNameDataGridViewTextBoxColumn.Name = "donorNameDataGridViewTextBoxColumn";
+            this.donorNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // donorAgeDataGridViewTextBoxColumn
+            // 
+            this.donorAgeDataGridViewTextBoxColumn.DataPropertyName = "donorAge";
+            this.donorAgeDataGridViewTextBoxColumn.HeaderText = "donorAge";
+            this.donorAgeDataGridViewTextBoxColumn.Name = "donorAgeDataGridViewTextBoxColumn";
+            this.donorAgeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // donorPhoneDataGridViewTextBoxColumn
+            // 
+            this.donorPhoneDataGridViewTextBoxColumn.DataPropertyName = "donorPhone";
+            this.donorPhoneDataGridViewTextBoxColumn.HeaderText = "donorPhone";
+            this.donorPhoneDataGridViewTextBoxColumn.Name = "donorPhoneDataGridViewTextBoxColumn";
+            this.donorPhoneDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // donorAddressDataGridViewTextBoxColumn
+            // 
+            this.donorAddressDataGridViewTextBoxColumn.DataPropertyName = "donorAddress";
+            this.donorAddressDataGridViewTextBoxColumn.HeaderText = "donorAddress";
+            this.donorAddressDataGridViewTextBoxColumn.Name = "donorAddressDataGridViewTextBoxColumn";
+            this.donorAddressDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // donorBTDataGridViewTextBoxColumn
+            // 
+            this.donorBTDataGridViewTextBoxColumn.DataPropertyName = "donorBT";
+            this.donorBTDataGridViewTextBoxColumn.HeaderText = "donorBT";
+            this.donorBTDataGridViewTextBoxColumn.Name = "donorBTDataGridViewTextBoxColumn";
+            this.donorBTDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // donorGenderDataGridViewTextBoxColumn
+            // 
+            this.donorGenderDataGridViewTextBoxColumn.DataPropertyName = "donorGender";
+            this.donorGenderDataGridViewTextBoxColumn.HeaderText = "donorGender";
+            this.donorGenderDataGridViewTextBoxColumn.Name = "donorGenderDataGridViewTextBoxColumn";
+            this.donorGenderDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // emp_viewDonor
             // 
@@ -370,12 +460,15 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "emp_viewDonor";
-            this.Text = "emp_viewDonor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.emp_viewDonor_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bbmsDBDataSetDonor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.donorBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -404,5 +497,15 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Label label10;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
+        private bbmsDBDataSetDonor bbmsDBDataSetDonor;
+        private System.Windows.Forms.BindingSource donorBindingSource;
+        private bbmsDBDataSetDonorTableAdapters.donorTableAdapter donorTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donorIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donorNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donorAgeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donorPhoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donorAddressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donorBTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donorGenderDataGridViewTextBoxColumn;
     }
 }

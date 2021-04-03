@@ -16,5 +16,11 @@ namespace BBMS
         {
             InitializeComponent();
         }
+
+        private void emp_viewDonor_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'bbmsDBDataSetDonor.donor' table. You can move, or remove it, as needed.
+            this.donorTableAdapter.Fill(this.bbmsDBDataSetDonor.donor);
+        }
     }
 }
