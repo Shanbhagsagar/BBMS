@@ -36,7 +36,6 @@ C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.emp_dashboard.resource
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.Login.resources
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.Properties.Resources.resources
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.csproj.GenerateResource.Cache
-C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\bin\Debug\bbms.mdb
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\bin\Debug\Guna.UI.dll
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\bin\Debug\Guna.UI2.dll
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.admin_analysis.resources
@@ -49,8 +48,6 @@ C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.emp_addPatient.resourc
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.emp_bloodStock.resources
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.emp_viewDonor.resources
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.emp_viewPatient.resources
-C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\bin\Debug\bbmsDB.mdf
-C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\bin\Debug\bbmsDB_log.ldf
 F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.admin_analysis.resources
 F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.admin_dashboard.resources
 F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.admin_editemployees.resources
@@ -68,3 +65,5 @@ F:\.net_project\BBMS\BBMS\bin\Debug\JMaterialTextbox.dll
 F:\.net_project\BBMS\BBMS\bin\Debug\JMetroTextBox.dll
 F:\.net_project\BBMS\BBMS\bin\Debug\JTextBox.dll
 F:\.net_project\BBMS\BBMS\bin\Debug\JTextBox2.dll
+C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.emp_editDonor.resources
+C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.emp_editPatient.resources

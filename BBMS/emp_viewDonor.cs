@@ -16,11 +16,5 @@ namespace BBMS
         {
             InitializeComponent();
         }
-
-        private void emp_viewDonor_Load(object sender, EventArgs e)
-        {
-           
-      
-        }
     }
 }
