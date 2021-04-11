@@ -36,7 +36,7 @@ namespace BBMS
 
                 while (dr.Read()) {
                     t2.Text = dr.GetValue(0).ToString();
-                    t3.Text = dr.GetValue(1).ToString();
+                    gunaNumeric1.Value = Convert.ToInt64(dr.GetValue(1).ToString());
                     t4.Text = dr.GetValue(2).ToString();
                     t5.Text = dr.GetValue(3).ToString();
                     t6.Text = dr.GetValue(4).ToString();
@@ -51,53 +51,62 @@ namespace BBMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Fetching Values from textbox
-            string id = t1.Text;
-            string name = t2.Text;
-            int age = Int16.Parse(t3.Text);
-            string phone = t4.Text;
-            string address = t5.Text;
-            string adhaar = t6.Text;
-            string gender = c1.SelectedItem.ToString();
-            string email = t8.Text;
-            string username = t9.Text;
-            string password = t10.Text;
-
-
-            //Update Data into Database
-            string query = "Update employee set eName = @eName, eAge = @eAge, ePhone = @ePhone, eAddress = @eAddress, eAdhaar = @eAdhaar, eGender = @eGender, eEmail = @eEmail, eUsername = @eUsername, ePassword = @ePassword where eID = @eID";
-            SqlCommand cmd1 = new SqlCommand(query, con);
-            cmd1.Parameters.AddWithValue("@eID", id);
-            cmd1.Parameters.AddWithValue("@eName", name);
-            cmd1.Parameters.AddWithValue("@eAge", age);
-            cmd1.Parameters.AddWithValue("@ePhone", phone);
-            cmd1.Parameters.AddWithValue("@eAddress", address);
-            cmd1.Parameters.AddWithValue("@eAdhaar", adhaar);
-            cmd1.Parameters.AddWithValue("@eGender", gender);
-            cmd1.Parameters.AddWithValue("@eEmail", email);
-            cmd1.Parameters.AddWithValue("@eUsername", username);
-            cmd1.Parameters.AddWithValue("@ePassword", password);
-            con.Open();
-            int result = cmd1.ExecuteNonQuery();
-            if (result == 1)
+            try
             {
-              MessageBox.Show("Details updated successfully");
-                t1.Clear();
-                t2.Clear();
-                t3.Clear();
-                t4.Clear();
-                t5.Clear();
-                c1.SelectedItem = null;
-                t6.Clear();
-                t8.Clear();
-                t9.Clear();
-                t10.Clear();
+                //Fetching Values from textbox
+                string id = t1.Text;
+                string name = t2.Text;
+                int age = Convert.ToInt16(gunaNumeric1.Value);
+                string phone = t4.Text;
+                string address = t5.Text;
+                string adhaar = t6.Text;
+                string gender = c1.SelectedItem.ToString();
+                string email = t8.Text;
+                string username = t9.Text;
+                string password = t10.Text;
+
+                if (!string.IsNullOrEmpty(name.Trim()) && !string.IsNullOrEmpty(phone.Trim()) && !string.IsNullOrEmpty(address.Trim()) && !string.IsNullOrEmpty(adhaar.Trim()) && !string.IsNullOrEmpty(gender.Trim()) && !string.IsNullOrEmpty(email.Trim()) && !string.IsNullOrEmpty(username.Trim()) && !string.IsNullOrEmpty(password.Trim()))
+                {
+                    //Update Data into Database
+                    string query = "Update employee set eName = @eName, eAge = @eAge, ePhone = @ePhone, eAddress = @eAddress, eAdhaar = @eAdhaar, eGender = @eGender, eEmail = @eEmail, eUsername = @eUsername, ePassword = @ePassword where eID = @eID";
+                    SqlCommand cmd1 = new SqlCommand(query, con);
+                    cmd1.Parameters.AddWithValue("@eID", id);
+                    cmd1.Parameters.AddWithValue("@eName", name);
+                    cmd1.Parameters.AddWithValue("@eAge", age);
+                    cmd1.Parameters.AddWithValue("@ePhone", phone);
+                    cmd1.Parameters.AddWithValue("@eAddress", address);
+                    cmd1.Parameters.AddWithValue("@eAdhaar", adhaar);
+                    cmd1.Parameters.AddWithValue("@eGender", gender);
+                    cmd1.Parameters.AddWithValue("@eEmail", email);
+                    cmd1.Parameters.AddWithValue("@eUsername", username);
+                    cmd1.Parameters.AddWithValue("@ePassword", password);
+                    con.Open();
+                    int result = cmd1.ExecuteNonQuery();
+                    if (result == 1)
+                    {
+                        MessageBox.Show("Details updated successfully");
+                        t1.Clear();
+                        t2.Clear();
+                        gunaNumeric1.Value = 18;
+                        t4.Clear();
+                        t5.Clear();
+                        c1.SelectedItem = null;
+                        t6.Clear();
+                        t8.Clear();
+                        t9.Clear();
+                        t10.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error : Details not updated");
+                    }
+                    con.Close();
+                }
             }
-            else
+            catch (Exception)
             {
-              MessageBox.Show("Error : Details not updated");
+                MessageBox.Show("Please enter all valid values!!");
             }
-            con.Close();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -115,7 +124,7 @@ namespace BBMS
                MessageBox.Show("Details deleted successfully");
                 t1.Clear();
                 t2.Clear();
-                t3.Clear();
+                gunaNumeric1.Value = 18;
                 t4.Clear();
                 t5.Clear();
                 c1.SelectedItem = null;
@@ -129,6 +138,38 @@ namespace BBMS
                MessageBox.Show("Error : Details not deleted");
             }
             con.Close();
+        }
+
+        private void dashboard_Click(object sender, EventArgs e)
+        {
+            admin_dashboard ad = new admin_dashboard();
+            ad.Show();
+            this.Hide();
+
+        }
+
+        private void addEmp_Click(object sender, EventArgs e)
+        {
+            admin_employees ae = new admin_employees();
+            ae.Show();
+            this.Hide();
+
+        }
+
+        private void editEmp_Click(object sender, EventArgs e)
+        {
+            admin_editemployees aee = new admin_editemployees();
+            aee.Show();
+            this.Hide();
+
+        }
+
+        private void viewEmp_Click(object sender, EventArgs e)
+        {
+            admin_viewemployees ave = new admin_viewemployees();
+            ave.Show();
+            this.Hide();
+
         }
     }
 }

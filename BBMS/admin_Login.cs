@@ -25,7 +25,7 @@ namespace BBMS
         {
             if (pass.Text.Trim().Length == 5)
             {
-            SqlConnection con = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
             string query = "Select * from admin where username='" + uname.Text.Trim() + "' and password='" + pass.Text.Trim() + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dtbl = new DataTable();

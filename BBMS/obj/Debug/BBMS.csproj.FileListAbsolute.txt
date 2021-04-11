@@ -67,3 +67,5 @@ F:\.net_project\BBMS\BBMS\bin\Debug\JTextBox.dll
 F:\.net_project\BBMS\BBMS\bin\Debug\JTextBox2.dll
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.emp_editDonor.resources
 C:\Users\Ben\Desktop\.Net Collab\BBMS\BBMS\obj\Debug\BBMS.emp_editPatient.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.emp_editDonor.resources
+F:\.net_project\BBMS\BBMS\obj\Debug\BBMS.emp_editPatient.resources

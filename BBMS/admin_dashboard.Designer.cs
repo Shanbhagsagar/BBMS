@@ -115,6 +115,7 @@
             this.label5.Size = new System.Drawing.Size(228, 31);
             this.label5.TabIndex = 13;
             this.label5.Text = "View Employees";
+            this.label5.Click += new System.EventHandler(this.viewEmp_Click);
             // 
             // label8
             // 
@@ -147,6 +148,7 @@
             this.label4.Size = new System.Drawing.Size(220, 31);
             this.label4.TabIndex = 6;
             this.label4.Text = "Edit Employees";
+            this.label4.Click += new System.EventHandler(this.editEmp_Click);
             // 
             // panel4
             // 
@@ -167,6 +169,7 @@
             this.label3.Size = new System.Drawing.Size(157, 31);
             this.label3.TabIndex = 4;
             this.label3.Text = "Employees";
+            this.label3.Click += new System.EventHandler(this.addEmp_Click);
             // 
             // panel3
             // 
@@ -187,6 +190,7 @@
             this.label2.Size = new System.Drawing.Size(160, 31);
             this.label2.TabIndex = 2;
             this.label2.Text = "Dashboard";
+            this.label2.Click += new System.EventHandler(this.dashboard_Click);
             // 
             // panel2
             // 
