@@ -395,6 +395,7 @@
             this.label2.Size = new System.Drawing.Size(160, 31);
             this.label2.TabIndex = 96;
             this.label2.Text = "Dashboard";
+            this.label2.Click += new System.EventHandler(this.empDashboard_Click);
             // 
             // panel10
             // 
@@ -423,6 +424,7 @@
             this.label18.Size = new System.Drawing.Size(178, 31);
             this.label18.TabIndex = 112;
             this.label18.Text = "Add Patient";
+            this.label18.Click += new System.EventHandler(this.addPatient_Click);
             // 
             // label3
             // 
@@ -463,6 +465,7 @@
             this.label17.Size = new System.Drawing.Size(173, 31);
             this.label17.TabIndex = 110;
             this.label17.Text = "Edit Donors";
+            this.label17.Click += new System.EventHandler(this.editDonor_Click);
             // 
             // label4
             // 
@@ -475,6 +478,7 @@
             this.label4.Size = new System.Drawing.Size(181, 31);
             this.label4.TabIndex = 103;
             this.label4.Text = "View Donors";
+            this.label4.Click += new System.EventHandler(this.viewDoner_Click);
             // 
             // panel8
             // 
@@ -511,6 +515,7 @@
             this.label5.Size = new System.Drawing.Size(193, 31);
             this.label5.TabIndex = 106;
             this.label5.Text = "Edit Patients";
+            this.label5.Click += new System.EventHandler(this.editPatient_Click);
             // 
             // label7
             // 
@@ -523,6 +528,7 @@
             this.label7.Size = new System.Drawing.Size(178, 31);
             this.label7.TabIndex = 104;
             this.label7.Text = "Blood Stock";
+            this.label7.Click += new System.EventHandler(this.bloodStock_Click);
             // 
             // panel6
             // 
@@ -543,6 +549,7 @@
             this.label6.Size = new System.Drawing.Size(201, 31);
             this.label6.TabIndex = 108;
             this.label6.Text = "View Patients";
+            this.label6.Click += new System.EventHandler(this.viewPatient_Click);
             // 
             // label8
             // 

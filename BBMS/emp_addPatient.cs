@@ -86,15 +86,22 @@ namespace BBMS
 
             try
             {
-                string name = t1.Text;
-                int age = Int16.Parse(t2.Text);
-                string phone = t3.Text;
-                string address = t4.Text;
-                int unit = Int16.Parse(t5.Text);
-                string case1 = t6.Text;
+                string name = t1.Text.Trim();
+                int age = Int16.Parse(t2.Text.Trim());
+                string phone = t3.Text.Trim();
+                string address = t4.Text.Trim();
+                int unit = Int16.Parse(t5.Text.Trim());
+                string case1 = t6.Text.Trim();
                 string bt = c1.SelectedItem.ToString();
                 string gender = c2.SelectedItem.ToString();
                 int bstockUnit = 0;
+
+                if (name == "" || phone == "" || address == "" || case1 == "")
+                {
+                    MessageBox.Show("Please enter all values");
+                    return;
+                }
+
                 if (unit > 0)
                 {
                     SqlConnection con = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
@@ -167,6 +174,55 @@ namespace BBMS
             {
                 MessageBox.Show("Please enter valid Data\n" + err.Message);
             }
+        }
+
+        private void empDashboard_Click(object sender, EventArgs e)
+        {
+            emp_dashboard edb = new emp_dashboard();
+            edb.Show();
+            this.Hide();
+        }
+        private void addDoner_Click(object sender, EventArgs e)
+        {
+            emp_addDoner ead = new emp_addDoner();
+            ead.Show();
+            this.Hide();
+        }
+        private void editDonor_Click(object sender, EventArgs e)
+        {
+            emp_editDonor eed = new emp_editDonor();
+            eed.Show();
+            this.Hide();
+        }
+        private void viewDoner_Click(object sender, EventArgs e)
+        {
+            emp_viewDonor evd = new emp_viewDonor();
+            evd.Show();
+            this.Hide();
+        }
+        private void addPatient_Click(object sender, EventArgs e)
+        {
+            emp_addPatient eap = new emp_addPatient();
+            eap.Show();
+            this.Hide();
+        }
+        private void editPatient_Click(object sender, EventArgs e)
+        {
+            emp_editPatient eep = new emp_editPatient();
+            eep.Show();
+            this.Hide();
+        }
+        private void viewPatient_Click(object sender, EventArgs e)
+        {
+            emp_viewPatient evp = new emp_viewPatient();
+            evp.Show();
+            this.Hide();
+        }
+        private void bloodStock_Click(object sender, EventArgs e)
+        {
+            emp_bloodStock ebs = new emp_bloodStock();
+            ebs.Show();
+            this.Hide();
         }
     }
 }

@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(emp_dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -54,12 +58,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,8 +66,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.panel12);
-            this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.panel9);
@@ -91,6 +87,48 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(231, 701);
             this.panel1.TabIndex = 1;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.DarkRed;
+            this.panel10.Location = new System.Drawing.Point(9, 324);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(10, 53);
+            this.panel10.TabIndex = 14;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label18.Font = new System.Drawing.Font("Audiowide", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label18.Location = new System.Drawing.Point(25, 336);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(178, 31);
+            this.label18.TabIndex = 15;
+            this.label18.Text = "Add Patient";
+            this.label18.Click += new System.EventHandler(this.addPatient_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.DarkRed;
+            this.panel9.Location = new System.Drawing.Point(9, 182);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(10, 53);
+            this.panel9.TabIndex = 12;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label17.Font = new System.Drawing.Font("Audiowide", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label17.Location = new System.Drawing.Point(25, 194);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(173, 31);
+            this.label17.TabIndex = 13;
+            this.label17.Text = "Edit Donors";
+            this.label17.Click += new System.EventHandler(this.editDonor_Click);
             // 
             // label8
             // 
@@ -131,6 +169,7 @@
             this.label7.Size = new System.Drawing.Size(178, 31);
             this.label7.TabIndex = 6;
             this.label7.Text = "Blood Stock";
+            this.label7.Click += new System.EventHandler(this.bloodStock_Click);
             // 
             // label6
             // 
@@ -143,6 +182,7 @@
             this.label6.Size = new System.Drawing.Size(201, 31);
             this.label6.TabIndex = 10;
             this.label6.Text = "View Patients";
+            this.label6.Click += new System.EventHandler(this.viewPatient_Click);
             // 
             // panel6
             // 
@@ -163,6 +203,7 @@
             this.label5.Size = new System.Drawing.Size(193, 31);
             this.label5.TabIndex = 8;
             this.label5.Text = "Edit Patients";
+            this.label5.Click += new System.EventHandler(this.editPatient_Click);
             // 
             // panel5
             // 
@@ -183,6 +224,7 @@
             this.label4.Size = new System.Drawing.Size(181, 31);
             this.label4.TabIndex = 6;
             this.label4.Text = "View Donors";
+            this.label4.Click += new System.EventHandler(this.viewDoner_Click);
             // 
             // panel4
             // 
@@ -203,6 +245,7 @@
             this.label3.Size = new System.Drawing.Size(158, 31);
             this.label3.TabIndex = 4;
             this.label3.Text = "Add Donor";
+            this.label3.Click += new System.EventHandler(this.addDoner_Click);
             // 
             // panel3
             // 
@@ -233,7 +276,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1247, 58);
             this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label1
             // 
@@ -352,62 +394,6 @@
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
             // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.DarkRed;
-            this.panel9.Location = new System.Drawing.Point(9, 182);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(10, 53);
-            this.panel9.TabIndex = 12;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label17.Font = new System.Drawing.Font("Audiowide", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label17.Location = new System.Drawing.Point(25, 194);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(173, 31);
-            this.label17.TabIndex = 13;
-            this.label17.Text = "Edit Donors";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.DarkRed;
-            this.panel10.Location = new System.Drawing.Point(9, 324);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(10, 53);
-            this.panel10.TabIndex = 14;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label18.Font = new System.Drawing.Font("Audiowide", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label18.Location = new System.Drawing.Point(25, 336);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(178, 31);
-            this.label18.TabIndex = 15;
-            this.label18.Text = "Add Patient";
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Location = new System.Drawing.Point(44, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(10, 53);
-            this.panel11.TabIndex = 2;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Location = new System.Drawing.Point(0, 91);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(41, 15);
-            this.panel12.TabIndex = 3;
-            // 
             // emp_dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -473,7 +459,5 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel12;
     }
 }
