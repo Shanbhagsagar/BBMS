@@ -48,5 +48,40 @@ namespace BBMS
             this.Hide();
             
         }
+
+        private void gunaLabel6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaCircleProgressBar4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void admin_dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
