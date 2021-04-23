@@ -114,7 +114,7 @@ namespace BBMS
                     cmd.Parameters.AddWithValue("@dBT", bt);
                     cmd.Parameters.AddWithValue("@dGender", gender);
                     cmd.Parameters.AddWithValue("@dUnit", unit);
-                    cmd.Parameters.AddWithValue("@dDate", DateTime.UtcNow.Date.ToString("dd/MM/yyyy"));
+                    cmd.Parameters.AddWithValue("@dDate", DateTime.UtcNow.Date.Date);
                     con.Open();
                     int result = cmd.ExecuteNonQuery();
                     if (result == 1)

@@ -132,7 +132,7 @@ namespace BBMS
                         cmd.Parameters.AddWithValue("@pBT", bt);
                         cmd.Parameters.AddWithValue("@pGender", gender);
                         cmd.Parameters.AddWithValue("@pUnit", unit);
-                        cmd.Parameters.AddWithValue("@pDate", DateTime.UtcNow.Date.ToString("dd/MM/yyyy"));
+                        cmd.Parameters.AddWithValue("@pDate", DateTime.UtcNow.Date.Date);
                         cmd.Parameters.AddWithValue("@pCase", case1);
                         con.Open();
                         int result = cmd.ExecuteNonQuery();

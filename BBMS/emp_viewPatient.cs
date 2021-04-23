@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -64,6 +65,29 @@ namespace BBMS
             emp_bloodStock ebs = new emp_bloodStock();
             ebs.Show();
             this.Hide();
+        }
+
+        private void t1_TextChanged(object sender, EventArgs e)
+        {
+            string search = t1.Text.Trim();
+            SqlConnection con = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+            string query = $"select * from patient where pName like '{search}%' OR pAge like '{search}%' OR pPhone like '{search}%' OR pAddress like '{search}%' OR pBT like '{search}%' OR pGender like '{search}%' OR pUnit like '{search}%' OR pDate like '{search}%' OR pCase like '{search}%'";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter sdr = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sdr.Fill(dt);
+            gunaDataGridView1.DataSource = dt;
+            gunaDataGridView1.ColumnHeadersHeight = 30;
+            Controls.Add(gunaDataGridView1);
+            gunaDataGridView1.Columns[0].Width = 40;
+            gunaDataGridView1.Columns[1].Width = 200;
+            gunaDataGridView1.Columns[2].Width = 50;
+            gunaDataGridView1.Columns[4].Width = 250;
+            gunaDataGridView1.Columns[5].Width = 50;
+            gunaDataGridView1.Columns[6].Width = 80;
+            gunaDataGridView1.Columns[7].Width = 50;
+            con.Close();
         }
     }
 }
