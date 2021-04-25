@@ -88,7 +88,7 @@ namespace BBMS
             try
             {
                 string name = t1.Text.Trim();
-                int age = Int16.Parse(t2.Text.Trim());
+                int age = Convert.ToInt16(t2.Value);
                 string phone = t3.Text.Trim();
                 string address = t4.Text.Trim();
                 int unit = Int16.Parse(t5.Text.Trim());
@@ -101,7 +101,7 @@ namespace BBMS
                     MessageBox.Show("Please enter all values");
                     return;
                 }
-                    
+
                 if (unit > 0)
                 {
                     SqlConnection con = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
@@ -141,7 +141,7 @@ namespace BBMS
                         {
                             MessageBox.Show("Details inserted successfully");
                             t1.Clear();
-                            t2.Clear();
+                            t2.ResetText();
                             t3.Clear();
                             t4.Clear();
                             t5.Clear();

@@ -87,11 +87,11 @@ namespace BBMS
             try
             {
                 string name = t1.Text.Trim();
-                int age = Int16.Parse(t2.Text.Trim());
+                int age = Convert.ToInt16(t2.Value);
                 string phone = t3.Text.Trim();
                 string address = t4.Text.Trim();
                 int unit = Int16.Parse(t5.Text.Trim());
-                string case1 = t6.Text.Trim();
+                string case1 = t6.SelectedItem.ToString();
                 string bt = c1.SelectedItem.ToString();
                 string gender = c2.SelectedItem.ToString();
                 int bstockUnit = 0;
@@ -149,11 +149,11 @@ namespace BBMS
                             {
                                 MessageBox.Show("Details inserted successfully");
                                 t1.Clear();
-                                t2.Clear();
+                                t2.ResetText();
                                 t3.Clear();
                                 t4.Clear();
                                 t5.Clear();
-                                t6.Clear();
+                                t6.SelectedItem = null;
                                 c1.SelectedItem = null;
                                 c2.SelectedItem = null;
                             }

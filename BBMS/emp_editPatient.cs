@@ -35,7 +35,7 @@ namespace BBMS
                     while (dr.Read())
                     {
                         t1.Text = dr.GetValue(1).ToString();
-                        t2.Text = dr.GetValue(2).ToString();
+                        t2.Value = Convert.ToInt16(dr.GetValue(2).ToString());
                         t3.Text = dr.GetValue(3).ToString();
                         t4.Text = dr.GetValue(4).ToString();
                         c1.SelectedItem = dr.GetValue(5).ToString();
@@ -55,7 +55,7 @@ namespace BBMS
             {
                 int id = Int16.Parse(t6.Text.Trim());
                 string name = t1.Text.Trim();
-                int age = Int16.Parse(t2.Text.Trim());
+                int age = Convert.ToInt16(t2.Value);
                 string phone = t3.Text.Trim();
                 string address = t4.Text.Trim();
                 int unit = Int16.Parse(t5.Text.Trim());
@@ -129,7 +129,7 @@ namespace BBMS
                     {
                         MessageBox.Show("Details updated successfully");
                         t1.Clear();
-                        t2.Clear();
+                        t2.ResetText();
                         t3.Clear();
                         t4.Clear();
                         t5.Clear();
@@ -209,7 +209,7 @@ namespace BBMS
                 {
                     MessageBox.Show("Details deleted successfully");
                     t1.Clear();
-                    t2.Clear();
+                    t2.ResetText();
                     t3.Clear();
                     t4.Clear();
                     t5.Clear();

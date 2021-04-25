@@ -45,11 +45,9 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -118,7 +116,7 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label8.Font = new System.Drawing.Font("Audiowide", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(49, 633);
+            this.label8.Location = new System.Drawing.Point(55, 549);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(112, 31);
             this.label8.TabIndex = 11;
@@ -136,11 +134,9 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label8);
@@ -246,14 +242,6 @@
             this.label4.Text = "View Donors";
             this.label4.Click += new System.EventHandler(this.viewDoner_Click);
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.DarkRed;
-            this.panel8.Location = new System.Drawing.Point(8, 540);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(10, 53);
-            this.panel8.TabIndex = 101;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.DarkRed;
@@ -282,19 +270,6 @@
             this.label5.TabIndex = 106;
             this.label5.Text = "Edit Patients";
             this.label5.Click += new System.EventHandler(this.editPatient_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Font = new System.Drawing.Font("Audiowide", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(24, 552);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(178, 31);
-            this.label7.TabIndex = 104;
-            this.label7.Text = "Blood Stock";
-            this.label7.Click += new System.EventHandler(this.bloodStock_Click);
             // 
             // panel6
             // 
@@ -440,11 +415,9 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label6;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;

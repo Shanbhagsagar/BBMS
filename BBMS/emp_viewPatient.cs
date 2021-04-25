@@ -81,12 +81,14 @@ namespace BBMS
             gunaDataGridView1.ColumnHeadersHeight = 30;
             Controls.Add(gunaDataGridView1);
             gunaDataGridView1.Columns[0].Width = 40;
-            gunaDataGridView1.Columns[1].Width = 200;
+            gunaDataGridView1.Columns[1].Width = 70;
             gunaDataGridView1.Columns[2].Width = 50;
-            gunaDataGridView1.Columns[4].Width = 250;
+            gunaDataGridView1.Columns[3].Width = 100;
+            gunaDataGridView1.Columns[4].Width = 200;
             gunaDataGridView1.Columns[5].Width = 50;
             gunaDataGridView1.Columns[6].Width = 80;
             gunaDataGridView1.Columns[7].Width = 50;
+            gunaDataGridView1.Columns[8].Width = 80;
             con.Close();
         }
     }

@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label8 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.t4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.t3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.t2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.c2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.t1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -43,11 +42,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -67,21 +64,10 @@
             this.b1 = new Guna.UI2.WinForms.Guna2Button();
             this.t5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.t2 = new Guna.UI.WinForms.GunaNumeric();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label8.Font = new System.Drawing.Font("Audiowide", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(49, 633);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 31);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Logout";
             // 
             // panel10
             // 
@@ -108,7 +94,7 @@
             this.t4.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.t4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.t4.HoverState.Parent = this.t4;
-            this.t4.Location = new System.Drawing.Point(945, 353);
+            this.t4.Location = new System.Drawing.Point(945, 355);
             this.t4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.t4.Name = "t4";
             this.t4.PasswordChar = '\0';
@@ -144,33 +130,6 @@
             this.t3.ShadowDecoration.Parent = this.t3;
             this.t3.Size = new System.Drawing.Size(229, 36);
             this.t3.TabIndex = 48;
-            // 
-            // t2
-            // 
-            this.t2.AutoRoundedCorners = true;
-            this.t2.BorderColor = System.Drawing.Color.Maroon;
-            this.t2.BorderRadius = 17;
-            this.t2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t2.DefaultText = "";
-            this.t2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t2.DisabledState.Parent = this.t2;
-            this.t2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t2.FocusedState.Parent = this.t2;
-            this.t2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t2.HoverState.Parent = this.t2;
-            this.t2.Location = new System.Drawing.Point(347, 355);
-            this.t2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t2.Name = "t2";
-            this.t2.PasswordChar = '\0';
-            this.t2.PlaceholderText = "";
-            this.t2.SelectedText = "";
-            this.t2.ShadowDecoration.Parent = this.t2;
-            this.t2.Size = new System.Drawing.Size(229, 36);
-            this.t2.TabIndex = 47;
             // 
             // c2
             // 
@@ -236,11 +195,9 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.panel6);
@@ -248,6 +205,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(231, 701);
             this.panel1.TabIndex = 35;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label8.Font = new System.Drawing.Font("Audiowide", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label8.Location = new System.Drawing.Point(55, 549);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(112, 31);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Logout";
             // 
             // label2
             // 
@@ -324,14 +293,6 @@
             this.panel4.Size = new System.Drawing.Size(10, 53);
             this.panel4.TabIndex = 38;
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.DarkRed;
-            this.panel8.Location = new System.Drawing.Point(9, 541);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(10, 53);
-            this.panel8.TabIndex = 40;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -360,19 +321,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(10, 53);
             this.panel5.TabIndex = 41;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Font = new System.Drawing.Font("Audiowide", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(25, 553);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(178, 31);
-            this.label7.TabIndex = 42;
-            this.label7.Text = "Blood Stock";
-            this.label7.Click += new System.EventHandler(this.bloodStock_Click);
             // 
             // label5
             // 
@@ -659,11 +607,30 @@
             this.label19.TabIndex = 71;
             this.label19.Text = "Unit";
             // 
+            // t2
+            // 
+            this.t2.BackColor = System.Drawing.Color.Transparent;
+            this.t2.BaseColor = System.Drawing.Color.White;
+            this.t2.BorderColor = System.Drawing.Color.Maroon;
+            this.t2.ButtonColor = System.Drawing.Color.Red;
+            this.t2.ButtonForeColor = System.Drawing.Color.White;
+            this.t2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.t2.ForeColor = System.Drawing.Color.Black;
+            this.t2.Location = new System.Drawing.Point(347, 361);
+            this.t2.Maximum = ((long)(65));
+            this.t2.Minimum = ((long)(18));
+            this.t2.Name = "t2";
+            this.t2.Size = new System.Drawing.Size(229, 30);
+            this.t2.TabIndex = 86;
+            this.t2.Text = "t2";
+            this.t2.Value = ((long)(18));
+            // 
             // emp_editDonor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1247, 758);
+            this.Controls.Add(this.t2);
             this.Controls.Add(this.t5);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.b2);
@@ -672,7 +639,6 @@
             this.Controls.Add(this.label16);
             this.Controls.Add(this.t4);
             this.Controls.Add(this.t3);
-            this.Controls.Add(this.t2);
             this.Controls.Add(this.c2);
             this.Controls.Add(this.t1);
             this.Controls.Add(this.panel1);
@@ -699,11 +665,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel10;
         private Guna.UI2.WinForms.Guna2TextBox t4;
         private Guna.UI2.WinForms.Guna2TextBox t3;
-        private Guna.UI2.WinForms.Guna2TextBox t2;
         private Guna.UI2.WinForms.Guna2ComboBox c2;
         private Guna.UI2.WinForms.Guna2TextBox t1;
         private System.Windows.Forms.Panel panel1;
@@ -714,11 +678,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel6;
@@ -738,5 +700,7 @@
         private Guna.UI2.WinForms.Guna2Button b1;
         private Guna.UI2.WinForms.Guna2TextBox t5;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label8;
+        private Guna.UI.WinForms.GunaNumeric t2;
     }
 }

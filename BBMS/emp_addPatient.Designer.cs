@@ -35,9 +35,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,7 +51,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.t4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.t3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.t2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.c2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.t1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.c1 = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -64,8 +61,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.t6 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.t6 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.t2 = new Guna.UI.WinForms.GunaNumeric();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -106,9 +104,7 @@
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.label5);
@@ -165,14 +161,6 @@
             this.label17.Text = "Edit Donors";
             this.label17.Click += new System.EventHandler(this.editDonor_Click);
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.DarkRed;
-            this.panel8.Location = new System.Drawing.Point(9, 541);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(10, 53);
-            this.panel8.TabIndex = 22;
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.DarkRed;
@@ -180,19 +168,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(10, 53);
             this.panel7.TabIndex = 28;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Font = new System.Drawing.Font("Audiowide", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(25, 553);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(178, 31);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Blood Stock";
-            this.label7.Click += new System.EventHandler(this.bloodStock_Click);
             // 
             // label6
             // 
@@ -297,7 +272,7 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label8.Font = new System.Drawing.Font("Audiowide", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(49, 633);
+            this.label8.Location = new System.Drawing.Point(55, 549);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(112, 31);
             this.label8.TabIndex = 11;
@@ -408,34 +383,6 @@
             this.t3.Size = new System.Drawing.Size(229, 36);
             this.t3.TabIndex = 62;
             this.t3.Validating += new System.ComponentModel.CancelEventHandler(this.t3_Validating);
-            // 
-            // t2
-            // 
-            this.t2.AutoRoundedCorners = true;
-            this.t2.BorderColor = System.Drawing.Color.Maroon;
-            this.t2.BorderRadius = 17;
-            this.t2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t2.DefaultText = "";
-            this.t2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t2.DisabledState.Parent = this.t2;
-            this.t2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t2.FocusedState.Parent = this.t2;
-            this.t2.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t2.HoverState.Parent = this.t2;
-            this.t2.Location = new System.Drawing.Point(631, 252);
-            this.t2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t2.Name = "t2";
-            this.t2.PasswordChar = '\0';
-            this.t2.PlaceholderText = "";
-            this.t2.SelectedText = "";
-            this.t2.ShadowDecoration.Parent = this.t2;
-            this.t2.Size = new System.Drawing.Size(229, 36);
-            this.t2.TabIndex = 61;
-            this.t2.Validating += new System.ComponentModel.CancelEventHandler(this.t2_Validating);
             // 
             // c2
             // 
@@ -605,58 +552,78 @@
             this.label9.TabIndex = 51;
             this.label9.Text = "Add Patient";
             // 
-            // t6
-            // 
-            this.t6.AutoRoundedCorners = true;
-            this.t6.BorderColor = System.Drawing.Color.Maroon;
-            this.t6.BorderRadius = 17;
-            this.t6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t6.DefaultText = "";
-            this.t6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t6.DisabledState.Parent = this.t6;
-            this.t6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t6.FocusedState.Parent = this.t6;
-            this.t6.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t6.HoverState.Parent = this.t6;
-            this.t6.Location = new System.Drawing.Point(930, 567);
-            this.t6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t6.Name = "t6";
-            this.t6.PasswordChar = '\0';
-            this.t6.PlaceholderText = "";
-            this.t6.SelectedText = "";
-            this.t6.ShadowDecoration.Parent = this.t6;
-            this.t6.Size = new System.Drawing.Size(229, 36);
-            this.t6.TabIndex = 67;
-            this.t6.Validating += new System.ComponentModel.CancelEventHandler(this.t1_Validating);
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Maroon;
-            this.label19.Location = new System.Drawing.Point(926, 512);
+            this.label19.Location = new System.Drawing.Point(627, 512);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(50, 23);
             this.label19.TabIndex = 66;
             this.label19.Text = "Case";
+            // 
+            // t6
+            // 
+            this.t6.AutoRoundedCorners = true;
+            this.t6.BackColor = System.Drawing.Color.Transparent;
+            this.t6.BorderColor = System.Drawing.Color.Maroon;
+            this.t6.BorderRadius = 17;
+            this.t6.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.t6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t6.FocusedColor = System.Drawing.Color.Empty;
+            this.t6.FocusedState.Parent = this.t6;
+            this.t6.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t6.ForeColor = System.Drawing.Color.Maroon;
+            this.t6.FormattingEnabled = true;
+            this.t6.HoverState.Parent = this.t6;
+            this.t6.ItemHeight = 30;
+            this.t6.Items.AddRange(new object[] {
+            "Cancer and Blood Patient",
+            "Surgical Patient",
+            "Anaemia Patient",
+            "Orthopaedic Patient",
+            "Obstetrics Patient",
+            "Trauma Patient",
+            "Other Medical Problem Patient"});
+            this.t6.ItemsAppearance.Parent = this.t6;
+            this.t6.Location = new System.Drawing.Point(631, 567);
+            this.t6.Name = "t6";
+            this.t6.ShadowDecoration.Parent = this.t6;
+            this.t6.Size = new System.Drawing.Size(302, 36);
+            this.t6.TabIndex = 67;
+            // 
+            // t2
+            // 
+            this.t2.BackColor = System.Drawing.Color.Transparent;
+            this.t2.BaseColor = System.Drawing.Color.White;
+            this.t2.BorderColor = System.Drawing.Color.Maroon;
+            this.t2.ButtonColor = System.Drawing.Color.Red;
+            this.t2.ButtonForeColor = System.Drawing.Color.White;
+            this.t2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.t2.ForeColor = System.Drawing.Color.Black;
+            this.t2.Location = new System.Drawing.Point(631, 258);
+            this.t2.Maximum = ((long)(100));
+            this.t2.Minimum = ((long)(10));
+            this.t2.Name = "t2";
+            this.t2.Size = new System.Drawing.Size(229, 30);
+            this.t2.TabIndex = 86;
+            this.t2.Text = "t2";
+            this.t2.Value = ((long)(18));
             // 
             // emp_addPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1247, 758);
+            this.Controls.Add(this.t2);
             this.Controls.Add(this.t6);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.t5);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.t4);
             this.Controls.Add(this.t3);
-            this.Controls.Add(this.t2);
             this.Controls.Add(this.c2);
             this.Controls.Add(this.t1);
             this.Controls.Add(this.c1);
@@ -694,9 +661,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
@@ -710,7 +675,6 @@
         private System.Windows.Forms.Label label16;
         private Guna.UI2.WinForms.Guna2TextBox t4;
         private Guna.UI2.WinForms.Guna2TextBox t3;
-        private Guna.UI2.WinForms.Guna2TextBox t2;
         private Guna.UI2.WinForms.Guna2ComboBox c2;
         private Guna.UI2.WinForms.Guna2TextBox t1;
         private Guna.UI2.WinForms.Guna2ComboBox c1;
@@ -721,7 +685,8 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2TextBox t6;
         private System.Windows.Forms.Label label19;
+        private Guna.UI2.WinForms.Guna2ComboBox t6;
+        private Guna.UI.WinForms.GunaNumeric t2;
     }
 }
