@@ -13,7 +13,7 @@ namespace BBMS
 {
     public partial class emp_editDonor : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
         public emp_editDonor()
         {
             InitializeComponent();
@@ -74,7 +74,7 @@ namespace BBMS
 
                 if (unit > 0)
                 {
-                    SqlConnection con1 = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+                    SqlConnection con1 = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
                     string btsearch = "select bUnit from bloodstock where bType=@dBT";
                     SqlCommand cmd1 = new SqlCommand(btsearch, con1);
                     cmd1.Parameters.AddWithValue("@dBT", bt);
@@ -153,7 +153,7 @@ namespace BBMS
                 int bstockUnit = 0;
                 int dprevUnit = 0;
 
-                SqlConnection con1 = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+                SqlConnection con1 = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
 
                 string btsearch = "select bUnit from bloodstock where bType=@dBT";
                 SqlCommand cmd1 = new SqlCommand(btsearch, con1);
@@ -263,11 +263,12 @@ namespace BBMS
             evp.Show();
             this.Hide();
         }
-        private void bloodStock_Click(object sender, EventArgs e)
+        private void logoutEmp_Click(object sender, EventArgs e)
         {
-            emp_bloodStock ebs = new emp_bloodStock();
-            ebs.Show();
-            this.Hide();
+            Login l = new Login();
+            l.Show();
+            this.Close();
+
         }
     }
 }

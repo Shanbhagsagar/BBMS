@@ -82,6 +82,7 @@
             this.label4.Size = new System.Drawing.Size(170, 18);
             this.label4.TabIndex = 7;
             this.label4.Text = "Continue as Admin";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -95,6 +96,7 @@
             this.label5.Size = new System.Drawing.Size(33, 31);
             this.label5.TabIndex = 8;
             this.label5.Text = "X";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -173,7 +175,7 @@
             this.pass.Location = new System.Drawing.Point(362, 234);
             this.pass.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.pass.Name = "pass";
-            this.pass.PasswordChar = '\0';
+            this.pass.PasswordChar = '*';
             this.pass.PlaceholderText = "";
             this.pass.SelectedText = "";
             this.pass.ShadowDecoration.Parent = this.pass;

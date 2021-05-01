@@ -121,6 +121,7 @@
             this.label8.Size = new System.Drawing.Size(112, 31);
             this.label8.TabIndex = 11;
             this.label8.Text = "Logout";
+            this.label8.Click += new System.EventHandler(this.logoutEmp_Click);
             // 
             // panel1
             // 

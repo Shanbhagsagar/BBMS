@@ -60,14 +60,15 @@ namespace BBMS
             evp.Show();
             this.Hide();
         }
-        private void bloodStock_Click(object sender, EventArgs e)
+        private void logoutEmp_Click(object sender, EventArgs e)
         {
-            emp_bloodStock ebs = new emp_bloodStock();
-            ebs.Show();
-            this.Hide();
+            Login l = new Login();
+            l.Show();
+            this.Close();
+
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
         private void emp_dashboard_Load(object sender, EventArgs e)
         {
             con.Open();

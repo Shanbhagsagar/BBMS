@@ -140,6 +140,7 @@
             this.label6.Size = new System.Drawing.Size(126, 31);
             this.label6.TabIndex = 15;
             this.label6.Text = "Analysis";
+            this.label6.Click += new System.EventHandler(this.admin_analysis_Click);
             // 
             // panel6
             // 
@@ -173,6 +174,7 @@
             this.label8.Size = new System.Drawing.Size(112, 31);
             this.label8.TabIndex = 11;
             this.label8.Text = "Logout";
+            this.label8.Click += new System.EventHandler(this.logoutEmp_Click);
             // 
             // panel5
             // 
@@ -407,7 +409,6 @@
             this.gunaLabel6.Size = new System.Drawing.Size(112, 47);
             this.gunaLabel6.TabIndex = 1;
             this.gunaLabel6.Text = "Users";
-            this.gunaLabel6.Click += new System.EventHandler(this.gunaLabel6_Click);
             // 
             // gunaLabel7
             // 

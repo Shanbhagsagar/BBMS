@@ -188,13 +188,13 @@
             this.c1.ItemHeight = 30;
             this.c1.Items.AddRange(new object[] {
             "A+",
-            "A−",
+            "A-",
             "B+",
-            "B−",
+            "B-",
             "AB+",
-            "AB−",
+            "AB-",
             "O+",
-            "O−"});
+            "O-"});
             this.c1.ItemsAppearance.Parent = this.c1;
             this.c1.Location = new System.Drawing.Point(629, 433);
             this.c1.Name = "c1";
@@ -363,6 +363,7 @@
             this.label7.Size = new System.Drawing.Size(112, 31);
             this.label7.TabIndex = 114;
             this.label7.Text = "Logout";
+            this.label7.Click += new System.EventHandler(this.logoutEmp_Click);
             // 
             // label2
             // 
@@ -536,7 +537,6 @@
             this.t5.ShadowDecoration.Parent = this.t5;
             this.t5.Size = new System.Drawing.Size(229, 36);
             this.t5.TabIndex = 36;
-            this.t5.Validating += new System.ComponentModel.CancelEventHandler(this.t2_Validating);
             // 
             // label16
             // 
@@ -597,7 +597,6 @@
             this.Name = "emp_addDoner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "emp_addDoner";
-            this.Validating += new System.ComponentModel.CancelEventHandler(this.t4_Validating);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

@@ -43,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +67,7 @@
             this.label16.Size = new System.Drawing.Size(228, 31);
             this.label16.TabIndex = 15;
             this.label16.Text = "View Employees";
+            this.label16.Click += new System.EventHandler(this.viewEmp_Click);
             // 
             // panel5
             // 
@@ -86,6 +88,7 @@
             this.label4.Size = new System.Drawing.Size(220, 31);
             this.label4.TabIndex = 6;
             this.label4.Text = "Edit Employees";
+            this.label4.Click += new System.EventHandler(this.editEmp_Click);
             // 
             // panel4
             // 
@@ -106,6 +109,7 @@
             this.label3.Size = new System.Drawing.Size(157, 31);
             this.label3.TabIndex = 4;
             this.label3.Text = "Employees";
+            this.label3.Click += new System.EventHandler(this.addEmp_Click);
             // 
             // panel3
             // 
@@ -126,6 +130,7 @@
             this.label2.Size = new System.Drawing.Size(160, 31);
             this.label2.TabIndex = 2;
             this.label2.Text = "Dashboard";
+            this.label2.Click += new System.EventHandler(this.dashboard_Click);
             // 
             // panel1
             // 
@@ -177,6 +182,7 @@
             this.label8.Size = new System.Drawing.Size(112, 31);
             this.label8.TabIndex = 11;
             this.label8.Text = "Logout";
+            this.label8.Click += new System.EventHandler(this.logoutEmp_Click);
             // 
             // label1
             // 
@@ -211,12 +217,20 @@
             this.panel2.Size = new System.Drawing.Size(1247, 58);
             this.panel2.TabIndex = 77;
             // 
+            // panel8
+            // 
+            this.panel8.Location = new System.Drawing.Point(275, 134);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(960, 612);
+            this.panel8.TabIndex = 79;
+            // 
             // admin_analysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1247, 758);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel2);
@@ -224,7 +238,10 @@
             this.MaximumSize = new System.Drawing.Size(1247, 758);
             this.MinimumSize = new System.Drawing.Size(1247, 758);
             this.Name = "admin_analysis";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin_analysis";
+         
+            this.Load += new System.EventHandler(this.admin_analysis_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -251,5 +268,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel8;
     }
 }

@@ -49,18 +49,21 @@ namespace BBMS
             this.Hide();
             
         }
-
-        private void gunaLabel6_Click(object sender, EventArgs e)
+        private void admin_analysis_Click(object sender, EventArgs e)
         {
+            admin_analysis aa = new admin_analysis();
+            aa.Show();
+            this.Hide();
+        }
+        private void logoutEmp_Click(object sender, EventArgs e)
+        {
+            admin_Login al = new admin_Login();
+            al.Show();
+            this.Close();
 
         }
 
-        private void gunaCircleProgressBar4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        SqlConnection con = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
         private void admin_dashboard_Load(object sender, EventArgs e)
         {
             con.Open();
@@ -123,24 +126,5 @@ namespace BBMS
             sda.Dispose(); dt.Reset(); con.Close();
         }
 
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

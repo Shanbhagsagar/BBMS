@@ -88,6 +88,7 @@
             this.label8.Size = new System.Drawing.Size(112, 31);
             this.label8.TabIndex = 11;
             this.label8.Text = "Logout";
+            this.label8.Click += new System.EventHandler(this.logoutEmp_Click);
             // 
             // panel5
             // 
@@ -190,6 +191,7 @@
             this.label17.Size = new System.Drawing.Size(126, 31);
             this.label17.TabIndex = 17;
             this.label17.Text = "Analysis";
+            this.label17.Click += new System.EventHandler(this.admin_analysis_Click);
             // 
             // panel6
             // 
@@ -389,7 +391,6 @@
             this.t3.HoverState.Parent = this.t3;
             this.t3.Location = new System.Drawing.Point(946, 243);
             this.t3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t3.MaxLength = 10;
             this.t3.Name = "t3";
             this.t3.PasswordChar = '\0';
             this.t3.PlaceholderText = "";
@@ -446,7 +447,6 @@
             this.t5.HoverState.Parent = this.t5;
             this.t5.Location = new System.Drawing.Point(647, 393);
             this.t5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t5.MaxLength = 10;
             this.t5.Name = "t5";
             this.t5.PasswordChar = '\0';
             this.t5.PlaceholderText = "";

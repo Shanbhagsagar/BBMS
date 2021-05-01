@@ -60,17 +60,18 @@ namespace BBMS
             evp.Show();
             this.Hide();
         }
-        private void bloodStock_Click(object sender, EventArgs e)
+        private void logoutEmp_Click(object sender, EventArgs e)
         {
-            emp_bloodStock ebs = new emp_bloodStock();
-            ebs.Show();
-            this.Hide();
+            Login l = new Login();
+            l.Show();
+            this.Close();
+
         }
 
         private void t1_TextChanged(object sender, EventArgs e)
         {
             string search = t1.Text.Trim();
-            SqlConnection con = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
             string query = $"select * from donor where dName like '{search}%' OR dAge like '{search}%' OR dPhone like '{search}%' OR dAddress like '{search}%' OR dBT like '{search}%' OR dGender like '{search}%' OR dUnit like '{search}%' OR dDate like '{search}%'";
             con.Open();
             SqlCommand cmd = new SqlCommand(query, con);

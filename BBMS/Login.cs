@@ -20,7 +20,7 @@ namespace BBMS
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
             string query = "Select * from employee where eUsername='" + uname.Text.Trim() + "' and ePassword='" + pass.Text.Trim() + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dtbl = new DataTable();
@@ -36,6 +36,18 @@ namespace BBMS
             {
                 MessageBox.Show("Check your Username and Password");
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            admin_Login ad = new admin_Login();
+            this.Hide();
+            ad.Show();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

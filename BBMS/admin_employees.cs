@@ -59,7 +59,7 @@ namespace BBMS
                     {
                         MessageBox.Show("Details inserted successfully");
                         t1.Clear();
-                        gunaNumeric1.Text = null;
+                        gunaNumeric1.Value = 18;
                         t3.Clear();
                         t4.Clear();
                         t5.Clear();
@@ -111,6 +111,19 @@ namespace BBMS
             admin_viewemployees ave = new admin_viewemployees();
             ave.Show();
             this.Hide();
+
+        }
+        private void admin_analysis_Click(object sender, EventArgs e)
+        {
+            admin_analysis aa = new admin_analysis();
+            aa.Show();
+            this.Hide();
+        }
+        private void logoutEmp_Click(object sender, EventArgs e)
+        {
+            admin_Login al = new admin_Login();
+            al.Show();
+            this.Close();
 
         }
 

@@ -55,5 +55,18 @@ namespace BBMS
             this.Hide();
 
         }
+        private void admin_analysis_Click(object sender, EventArgs e)
+        {
+            admin_analysis aa = new admin_analysis();
+            aa.Show();
+            this.Hide();
+        }
+        private void logoutEmp_Click(object sender, EventArgs e)
+        {
+            admin_Login al = new admin_Login();
+            al.Show();
+            this.Close();
+
+        }
     }
 }

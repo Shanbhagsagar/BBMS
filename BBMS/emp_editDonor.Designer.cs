@@ -217,6 +217,7 @@
             this.label8.Size = new System.Drawing.Size(112, 31);
             this.label8.TabIndex = 13;
             this.label8.Text = "Logout";
+            this.label8.Click += new System.EventHandler(this.logoutEmp_Click);
             // 
             // label2
             // 
@@ -394,13 +395,13 @@
             this.c1.ItemHeight = 30;
             this.c1.Items.AddRange(new object[] {
             "A+",
-            "A−",
+            "A-",
             "B+",
-            "B−",
+            "B-",
             "AB+",
-            "AB−",
+            "AB-",
             "O+",
-            "O−"});
+            "O-"});
             this.c1.ItemsAppearance.Parent = this.c1;
             this.c1.Location = new System.Drawing.Point(347, 507);
             this.c1.Name = "c1";

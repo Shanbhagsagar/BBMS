@@ -13,7 +13,7 @@ namespace BBMS
 {
     public partial class emp_editPatient : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
         public emp_editPatient()
         {
             InitializeComponent();
@@ -61,7 +61,7 @@ namespace BBMS
                 int unit = Int16.Parse(t5.Text.Trim());
                 string bt = c1.SelectedItem.ToString();
                 string gender = c2.SelectedItem.ToString();
-                string cases = t7.Text.Trim();
+                string cases = t7.SelectedValue.ToString();
                 int bstockUnit = 0;
                 int dprevUnit = 0;
                 int dfinalUnit = 0;
@@ -74,7 +74,7 @@ namespace BBMS
 
                 if (unit > 0)
                 {
-                    SqlConnection con1 = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+                    SqlConnection con1 = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
                     string btsearch = "select bUnit from bloodstock where bType=@pBT";
                     SqlCommand cmd1 = new SqlCommand(btsearch, con1);
                     cmd1.Parameters.AddWithValue("@pBT", bt);
@@ -129,14 +129,14 @@ namespace BBMS
                     {
                         MessageBox.Show("Details updated successfully");
                         t1.Clear();
-                        t2.ResetText();
+                        t2.Value = 18;
                         t3.Clear();
                         t4.Clear();
                         t5.Clear();
                         c1.SelectedItem = null;
                         c2.SelectedItem = null;
                         t6.Clear();
-                        t7.Clear();
+                        t7.SelectedItem = null;
                     }
                     else
                     {
@@ -159,7 +159,7 @@ namespace BBMS
                 int bstockUnit = 0;
                 int dprevUnit = 0;
 
-                SqlConnection con1 = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+                SqlConnection con1 = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
 
                 string btsearch = "select bUnit from bloodstock where bType=@dBT";
                 SqlCommand cmd1 = new SqlCommand(btsearch, con1);
@@ -268,11 +268,12 @@ namespace BBMS
             evp.Show();
             this.Hide();
         }
-        private void bloodStock_Click(object sender, EventArgs e)
+        private void logoutEmp_Click(object sender, EventArgs e)
         {
-            emp_bloodStock ebs = new emp_bloodStock();
-            ebs.Show();
-            this.Hide();
+            Login l = new Login();
+            l.Show();
+            this.Close();
+
         }
     }
 }

@@ -80,6 +80,7 @@
             this.label17.Size = new System.Drawing.Size(126, 31);
             this.label17.TabIndex = 17;
             this.label17.Text = "Analysis";
+            this.label17.Click += new System.EventHandler(this.admin_analysis_Click);
             // 
             // label6
             // 
@@ -183,6 +184,7 @@
             this.label8.Size = new System.Drawing.Size(112, 31);
             this.label8.TabIndex = 11;
             this.label8.Text = "Logout";
+            this.label8.Click += new System.EventHandler(this.logoutEmp_Click);
             // 
             // label13
             // 

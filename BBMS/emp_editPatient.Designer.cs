@@ -64,9 +64,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.t7 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.t2 = new Guna.UI.WinForms.GunaNumeric();
+            this.t7 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -115,6 +115,7 @@
             this.label8.Size = new System.Drawing.Size(112, 31);
             this.label8.TabIndex = 11;
             this.label8.Text = "Logout";
+            this.label8.Click += new System.EventHandler(this.logoutEmp_Click);
             // 
             // panel10
             // 
@@ -523,13 +524,13 @@
             this.c1.ItemHeight = 30;
             this.c1.Items.AddRange(new object[] {
             "A+",
-            "A−",
+            "A-",
             "B+",
-            "B−",
+            "B-",
             "AB+",
-            "AB−",
+            "AB-",
             "O+",
-            "O−"});
+            "O-"});
             this.c1.ItemsAppearance.Parent = this.c1;
             this.c1.Location = new System.Drawing.Point(944, 399);
             this.c1.Name = "c1";
@@ -609,33 +610,6 @@
             this.label14.TabIndex = 78;
             this.label14.Text = "Blood Group";
             // 
-            // t7
-            // 
-            this.t7.AutoRoundedCorners = true;
-            this.t7.BorderColor = System.Drawing.Color.Maroon;
-            this.t7.BorderRadius = 17;
-            this.t7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t7.DefaultText = "";
-            this.t7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t7.DisabledState.Parent = this.t7;
-            this.t7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t7.FocusedState.Parent = this.t7;
-            this.t7.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t7.HoverState.Parent = this.t7;
-            this.t7.Location = new System.Drawing.Point(944, 551);
-            this.t7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t7.Name = "t7";
-            this.t7.PasswordChar = '\0';
-            this.t7.PlaceholderText = "";
-            this.t7.SelectedText = "";
-            this.t7.ShadowDecoration.Parent = this.t7;
-            this.t7.Size = new System.Drawing.Size(229, 36);
-            this.t7.TabIndex = 93;
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -666,13 +640,43 @@
             this.t2.Text = "t2";
             this.t2.Value = ((long)(18));
             // 
+            // t7
+            // 
+            this.t7.AutoRoundedCorners = true;
+            this.t7.BackColor = System.Drawing.Color.Transparent;
+            this.t7.BorderColor = System.Drawing.Color.Maroon;
+            this.t7.BorderRadius = 17;
+            this.t7.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.t7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.t7.FocusedColor = System.Drawing.Color.Empty;
+            this.t7.FocusedState.Parent = this.t7;
+            this.t7.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t7.ForeColor = System.Drawing.Color.Maroon;
+            this.t7.FormattingEnabled = true;
+            this.t7.HoverState.Parent = this.t7;
+            this.t7.ItemHeight = 30;
+            this.t7.Items.AddRange(new object[] {
+            "Cancer and Blood Patient",
+            "Surgical Patient",
+            "Anaemia Patient",
+            "Orthopaedic Patient",
+            "Obstetrics Patient",
+            "Trauma Patient",
+            "Other Medical Problem Patient"});
+            this.t7.ItemsAppearance.Parent = this.t7;
+            this.t7.Location = new System.Drawing.Point(944, 551);
+            this.t7.Name = "t7";
+            this.t7.ShadowDecoration.Parent = this.t7;
+            this.t7.Size = new System.Drawing.Size(302, 36);
+            this.t7.TabIndex = 95;
+            // 
             // emp_editPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1247, 758);
-            this.Controls.Add(this.t2);
             this.Controls.Add(this.t7);
+            this.Controls.Add(this.t2);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.t5);
             this.Controls.Add(this.label19);
@@ -744,8 +748,8 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private Guna.UI2.WinForms.Guna2TextBox t7;
         private System.Windows.Forms.Label label20;
         private Guna.UI.WinForms.GunaNumeric t2;
+        private Guna.UI2.WinForms.Guna2ComboBox t7;
     }
 }

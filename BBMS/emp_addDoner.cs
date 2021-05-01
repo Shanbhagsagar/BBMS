@@ -39,17 +39,7 @@ namespace BBMS
 
         private void t2_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrEmpty(t2.Text.Trim()) ||t2.Text.Trim().Any(char.IsLetter))
-            {
-                e.Cancel = true;
-                t2.Focus();
-                errorProvider.SetError(t2, "Please enter valid data");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider.SetError(t2, null);
-            }
+
         }
 
         private void t3_Validating(object sender, CancelEventArgs e)
@@ -96,7 +86,7 @@ namespace BBMS
                 string gender = c2.SelectedItem.ToString();
                 int bstockUnit = 0;
 
-                if (name == "" || phone =="" || address=="")
+                if (name == "" || phone == "" || address == "")
                 {
                     MessageBox.Show("Please enter all values");
                     return;
@@ -104,7 +94,7 @@ namespace BBMS
 
                 if (unit > 0)
                 {
-                    SqlConnection con = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+                    SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
                     string query = "insert into donor(dName,dAge,dPhone,dAddress,dBT,dGender,dUnit,dDate) values(@dName,@dAge,@dPhone,@dAddress,@dBT,@dGender,@dUnit,@dDate)";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@dName", name);
@@ -160,9 +150,9 @@ namespace BBMS
                     MessageBox.Show("Please enter Blood Unit greater than 0");
                 }
             }
-            catch(Exception err)
+            catch (Exception err)
             {
-                MessageBox.Show("Please enter valid Data\n"+err.Message);
+                MessageBox.Show("Please enter valid Data\n" + err.Message);
             }
 
 
@@ -211,11 +201,13 @@ namespace BBMS
             evp.Show();
             this.Hide();
         }
-        private void bloodStock_Click(object sender, EventArgs e)
+  
+        private void logoutEmp_Click(object sender, EventArgs e)
         {
-            emp_bloodStock ebs = new emp_bloodStock();
-            ebs.Show();
-            this.Hide();
+            Login l = new Login();
+            l.Show();
+            this.Close();
+
         }
     }
 }

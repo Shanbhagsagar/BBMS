@@ -39,17 +39,7 @@ namespace BBMS
 
         private void t2_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrEmpty(t2.Text.Trim()) || t2.Text.Trim().Any(char.IsLetter))
-            {
-                e.Cancel = true;
-                t2.Focus();
-                errorProvider.SetError(t2, "Please enter valid data");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider.SetError(t2, null);
-            }
+
         }
 
         private void t3_Validating(object sender, CancelEventArgs e)
@@ -91,7 +81,7 @@ namespace BBMS
                 string phone = t3.Text.Trim();
                 string address = t4.Text.Trim();
                 int unit = Int16.Parse(t5.Text.Trim());
-                string case1 = t6.SelectedItem.ToString();
+                string case1 = t7.SelectedItem.ToString();
                 string bt = c1.SelectedItem.ToString();
                 string gender = c2.SelectedItem.ToString();
                 int bstockUnit = 0;
@@ -104,7 +94,7 @@ namespace BBMS
 
                 if (unit > 0)
                 {
-                    SqlConnection con = new SqlConnection(@"Data Source=BEN;Initial Catalog=bbms;Integrated Security=True");
+                    SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-R8MTFBR;Initial Catalog=bbms;Integrated Security=True");
                     string btsearch = "select bUnit from bloodstock where bType=@pBT";
                     SqlCommand cmd1 = new SqlCommand(btsearch, con);
                     cmd1.Parameters.AddWithValue("@pBT", bt);
@@ -149,11 +139,11 @@ namespace BBMS
                             {
                                 MessageBox.Show("Details inserted successfully");
                                 t1.Clear();
-                                t2.ResetText();
+                                t2.Value = 18;
                                 t3.Clear();
                                 t4.Clear();
                                 t5.Clear();
-                                t6.SelectedItem = null;
+                                t7.SelectedItem = null;
                                 c1.SelectedItem = null;
                                 c2.SelectedItem = null;
                             }
@@ -218,11 +208,13 @@ namespace BBMS
             evp.Show();
             this.Hide();
         }
-        private void bloodStock_Click(object sender, EventArgs e)
+
+        private void logoutEmp_Click(object sender, EventArgs e)
         {
-            emp_bloodStock ebs = new emp_bloodStock();
-            ebs.Show();
-            this.Hide();
+            Login l = new Login();
+            l.Show();
+            this.Close();
+
         }
     }
 }
