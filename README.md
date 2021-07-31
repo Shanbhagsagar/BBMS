@@ -12,10 +12,10 @@
 
 ### Screenshots
 ---
-#### Splash Screen
+### Splash Screen
 ![](https://github.com/Shanbhagsagar/BBMS/blob/main/BBMS%20Screenshot/1splashscreen.png)
 ---
-#### Employee Panel
+### Employee Panel
 ---
 ![](https://github.com/Shanbhagsagar/BBMS/blob/main/BBMS%20Screenshot/2loginscreen.png)
 
@@ -29,7 +29,7 @@
 
 ![](https://github.com/Shanbhagsagar/BBMS/blob/main/BBMS%20Screenshot/7viewpatient.png)
 ---
-#### Admin Panel
+### Admin Panel
 ---
 ![](https://github.com/Shanbhagsagar/BBMS/blob/main/BBMS%20Screenshot/9adminloginscreen.png)
 
