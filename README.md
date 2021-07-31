@@ -1,7 +1,6 @@
 # BBMS
 
-## Project Made by 
-@Shanbhagsagar @TJohn00
+## Project Made by [@Shanbhagsagar](https://github.com/Shanbhagsagar) & [@TJohn00](https://github.com/TJohn00)
 
 ### About the project
 
