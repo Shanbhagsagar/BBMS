@@ -1,5 +1,7 @@
 # BBMS
 
+## Project Made by @Shanbhagsagar & @TJohn00
+
 ### About the project
 
 - Its a .NET GUI application used by Blood Banks to manage the blood units between donors and recipients thereby optimizing the mundane tasks. 
@@ -9,4 +11,7 @@
 - Analysis was performed on donor and recipient age groups, blood types and medical case scenarios.
 
 ### Screenshots
+
+#### Splash Screen
+![](https://github.com/Shanbhagsagar/BBMS/blob/main/BBMS%20Screenshot/1splashscreen.png)
 ---
